@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Client Portal — Finaura™ Investment Solution</title>
+<meta name="description" content="Access your investment portfolio securely via MF Central.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0c0c0c;--ink-soft:#2a2a2a;--ink-muted:#6a6a6a;--ink-faint:#b0b0b0;
+  --gold:#b8922a;--gold-pale:rgba(184,146,42,0.08);
+  --cream:#faf8f4;--white:#ffffff;
+  --border:#e8e4db;--border-gold:rgba(184,146,42,0.25);
+}
+html,body{height:100%}
+body{font-family:'DM Sans',-apple-system,sans-serif;color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;min-height:100vh;}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 15% 25%,rgba(184,146,42,.07) 0%,transparent 50%),radial-gradient(circle at 85% 75%,rgba(184,146,42,.05) 0%,transparent 50%);}
+
+.hdr{padding:1.5rem 2rem;border-bottom:1px solid var(--border);background:rgba(250,248,244,.92);backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:space-between;position:relative;z-index:10;}
+.logo{text-decoration:none}
+.logo-mark{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--ink);letter-spacing:.02em}
+.logo-mark span{color:var(--gold)}
+.logo-sub{font-size:.58rem;color:var(--ink-muted);letter-spacing:.18em;text-transform:uppercase;margin-top:3px;font-weight:500}
+.back{font-size:.75rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-muted);text-decoration:none;display:flex;align-items:center;gap:.4rem;transition:color .2s;}
+.back:hover{color:var(--ink)}
+.back svg{transition:transform .2s}
+.back:hover svg{transform:translateX(-3px)}
+
+.main{flex:1;display:flex;align-items:center;justify-content:center;padding:3rem 1.5rem;position:relative;z-index:1;}
+.wrap{width:100%;max-width:460px;text-align:center;animation:fadeUp .5s ease both;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+.shield-icon{width:64px;height:64px;border-radius:50%;background:var(--gold-pale);border:1px solid var(--border-gold);display:flex;align-items:center;justify-content:center;margin:0 auto 1.75rem;}
+.eyebrow{font-size:.65rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;justify-content:center;gap:.5rem;margin-bottom:1rem;}
+.eyebrow::before,.eyebrow::after{content:'';width:1.25rem;height:1px;background:var(--gold)}
+.heading{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:600;line-height:1.15;color:var(--ink);margin-bottom:.75rem;}
+.heading em{font-style:italic;color:var(--gold)}
+.desc{font-size:.925rem;color:var(--ink-muted);line-height:1.8;max-width:380px;margin:0 auto 2.5rem;}
+
+.card{background:var(--white);border:1px solid var(--border);border-radius:.25rem;padding:2.25rem;box-shadow:0 4px 32px rgba(0,0,0,.07);margin-bottom:1.5rem;}
+.expect-label{font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:1rem;}
+.steps-list{display:flex;flex-direction:column;gap:.75rem;margin-bottom:2rem;text-align:left;}
+.step-row{display:flex;align-items:flex-start;gap:.875rem;}
+.step-num{width:24px;height:24px;border-radius:50%;flex-shrink:0;border:1px solid var(--border-gold);font-size:.72rem;font-weight:600;color:var(--gold);font-family:'Cormorant Garamond',serif;display:flex;align-items:center;justify-content:center;margin-top:.1rem;}
+.step-text{font-size:.85rem;color:var(--ink-soft);line-height:1.6}
+.step-text strong{color:var(--ink);font-weight:600}
+
+.divider{height:1px;background:var(--border);margin:1.5rem 0}
+
+.portal-btn{display:flex;align-items:center;justify-content:center;gap:.625rem;width:100%;padding:1rem 1.5rem;background:var(--ink);color:var(--white);border:none;border-radius:.25rem;font-family:'DM Sans',sans-serif;font-size:.825rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:background .25s,transform .2s,box-shadow .25s;}
+.portal-btn:hover{background:var(--gold);transform:translateY(-2px);box-shadow:0 8px 28px rgba(184,146,42,.3);}
+.portal-btn:active{transform:translateY(0)}
+
+.trust{display:flex;align-items:center;justify-content:center;gap:1.25rem;margin-top:1.25rem;flex-wrap:wrap;}
+.trust-item{display:flex;align-items:center;gap:.35rem;font-size:.68rem;color:var(--ink-muted);font-weight:500;}
+.trust-item svg{color:var(--gold)}
+
+.help{font-size:.8rem;color:var(--ink-muted);line-height:1.7}
+.help a{color:var(--gold);text-decoration:none;font-weight:500}
+.help a:hover{text-decoration:underline}
+
+footer{position:relative;z-index:1;text-align:center;padding:1.5rem 2rem;border-top:1px solid var(--border);background:var(--white);font-size:.72rem;color:var(--ink-faint);}
+footer a{color:var(--ink-muted);text-decoration:none}
+footer a:hover{color:var(--ink)}
+
+@media(max-width:480px){
+  .hdr{padding:1.25rem}
+  .main{padding:2rem 1rem;align-items:flex-start;padding-top:2.5rem}
+  .heading{font-size:2rem}
+  .card{padding:1.75rem 1.5rem}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <a href="index.html" class="logo">
+    <div class="logo-mark">Fin<span>aura</span>™</div>
+    <div class="logo-sub">Investment Solution</div>
+  </a>
+  <a href="index.html" class="back">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    Back to site
+  </a>
+</header>
+
+<main class="main">
+  <div class="wrap">
+
+    <div class="shield-icon">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    </div>
+
+    <div class="eyebrow">Client Portfolio Access</div>
+    <h1 class="heading">View Your<br><em>Investments</em></h1>
+    <p class="desc">Your portfolio is securely managed on MF Central — India's official mutual fund platform, regulated by SEBI and AMFI.</p>
+
+    <div class="card">
+      <div class="expect-label">What happens when you click below</div>
+      <div class="steps-list">
+        <div class="step-row">
+          <div class="step-num">1</div>
+          <div class="step-text">You will be directed to <strong>MF Central's secure investor portal</strong>. Use the <strong>login credentials shared by the Finaura™ team</strong> to sign in.</div>
+        </div>
+        <div class="step-row">
+          <div class="step-num">2</div>
+          <div class="step-text">If you have misplaced your password, select <strong>Sign In with OTP</strong>. An OTP will be sent to your registered mobile number and email address. You may also be prompted with a <strong>security question</strong> — the answer to which was provided to you alongside your login credentials.</div>
+        </div>
+        <div class="step-row">
+          <div class="step-num">3</div>
+          <div class="step-text">Once signed in, your complete portfolio is available — <strong>holdings, active SIPs, transaction history, statements and current portfolio value</strong> — all in one place.</div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <a href="https://app.mfcentral.com/investor/signin" target="_blank" rel="noopener noreferrer" class="portal-btn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Open MF Central Portfolio
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+
+      <div class="trust">
+        <div class="trust-item">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Bank-grade SSL
+        </div>
+        <div class="trust-item">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          SEBI Regulated
+        </div>
+        <div class="trust-item">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          OTP Verified
+        </div>
+        <div class="trust-item">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Live Portfolio
+        </div>
+      </div>
+    </div>
+
+    <p class="help">
+      Need help logging in or forgot your credentials?<br>
+      <a href="https://wa.me/918146509068?text=Hi%20Akash!%20I%20need%20help%20accessing%20my%20MF%20Central%20portfolio." target="_blank" rel="noopener">Message Akash on WhatsApp →</a>
+    </p>
+
+  </div>
+</main>
+
+<footer>
+  © <span id="yr"></span> <strong style="color:var(--ink-muted)">Finaura™</strong> Investment Solution &nbsp;·&nbsp;
+  AMFI Registered · ARN-293004 &nbsp;·&nbsp;
+  <a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp;
+  <a href="index.html">Home</a>
+</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

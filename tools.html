@@ -1,0 +1,2110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI2IiBmaWxsPSIjMGMwYzBjIi8+CiAgPHJlY3QgeD0iMSIgeT0iMSIgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiByeD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDE4NCwxNDYsNDIsMC40KSIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPHRleHQgeD0iMTYiIHk9IjE3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIxOSIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2I4OTIyYSI+RjwvdGV4dD4KPC9zdmc+">
+  <link rel="shortcut icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI2IiBmaWxsPSIjMGMwYzBjIi8+CiAgPHJlY3QgeD0iMSIgeT0iMSIgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiByeD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDE4NCwxNDYsNDIsMC40KSIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPHRleHQgeD0iMTYiIHk9IjE3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIxOSIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2I4OTIyYSI+RjwvdGV4dD4KPC9zdmc+">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Financial Calculators — SIP, EMI, Tax | Finaura™</title>
+    <meta name="description" content="Free financial calculators — SIP, lumpsum, retirement, EMI, ELSS, HRA, NPS and more. Built by Finaura™, AMFI-registered MFD in Ludhiana. No login needed.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.finauraindia.com/tools.html">
+    <meta name="geo.region" content="IN-PB">
+    <meta property="og:title" content="Free Financial Calculators — Finaura™">
+    <meta property="og:description" content="SIP, lumpsum, retirement, EMI, tax & more — professional calculators, free for every Indian family.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.finauraindia.com/tools.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+    --ink:#0c0c0c;
+    --ink-soft:#2a2a2a;
+    --ink-muted:#6a6a6a;
+    --ink-faint:#b0b0b0;
+    --gold:#b8922a;
+    --gold-light:#d4a84b;
+    --gold-pale:rgba(184,146,42,0.08);
+    --cream:#faf8f4;
+    --white:#ffffff;
+    --border:#e8e4db;
+    --border-gold:rgba(184,146,42,0.25);
+}
+
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;color:var(--ink);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased}
+
+/* HEADER */
+.header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(250,248,244,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:all .3s}
+.header-inner{max-width:1180px;margin:0 auto;padding:0 2rem;height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.logo-mark{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:.02em}
+.logo-mark span{color:var(--gold)}
+.logo-sub{font-size:.6rem;color:var(--ink-muted);letter-spacing:.18em;text-transform:uppercase;margin-top:2px;font-weight:500}
+.nav{display:flex;align-items:center;gap:.25rem}
+.nav-link{font-size:.8rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-muted);text-decoration:none;padding:.5rem .85rem;border-radius:.25rem;transition:color .2s;background:none;border:none;cursor:pointer}
+.nav-link:hover,.nav-link.active{color:var(--ink)}
+.nav-cta{font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--white);background:var(--ink);border:none;cursor:pointer;padding:.65rem 1.4rem;border-radius:.25rem;transition:all .25s;margin-left:.5rem}
+.nav-cta:hover{background:var(--gold);transform:translateY(-1px)}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:.5rem}
+.mob-menu{display:none;flex-direction:column;padding:1rem 2rem 1.5rem;border-top:1px solid var(--border);gap:.25rem}
+.mob-menu.open{display:flex}
+
+/* LAYOUT */
+.container{max-width:1180px;margin:0 auto;padding:0 2rem}
+.section{padding:6rem 0}
+.section-cream{background:var(--cream)}
+.section-ink{background:var(--ink)}
+
+/* TYPOGRAPHY */
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1.15;letter-spacing:-.02em}
+.eyebrow{font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:.875rem}
+.rule{width:2.5rem;height:1px;background:var(--gold);margin:1.25rem auto}
+.rule-left{margin:1.25rem 0}
+
+/* FADE ANIMATIONS */
+.fade{opacity:1;transform:none;transition:all .7s cubic-bezier(.4,0,.2,1)}
+.fade.visible{opacity:1;transform:none}
+.fade-delay-1{transition-delay:.1s}
+.fade-delay-2{transition-delay:.2s}
+.fade-delay-3{transition-delay:.3s}
+.fade-delay-4{transition-delay:.4s}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.9rem 2.25rem;border-radius:.25rem;border:none;cursor:pointer;text-decoration:none;transition:all .25s cubic-bezier(.4,0,.2,1)}
+.btn-dark{background:var(--ink);color:var(--white)}
+.btn-dark:hover{background:var(--gold);transform:translateY(-2px);box-shadow:0 8px 24px rgba(184,146,42,.3)}
+.btn-outline{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn-outline:hover{background:var(--ink);color:var(--white);transform:translateY(-1px)}
+.btn-ghost{background:rgba(255,255,255,.1);color:var(--white);border:1px solid rgba(255,255,255,.2)}
+.btn-ghost:hover{background:rgba(255,255,255,.18)}
+
+.btn-gold{background:var(--gold);color:var(--white)}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(184,146,42,.4)}
+
+/* ━━━━━━━━━━━ FOOTER ━━━━━━━━━━━ */
+.footer{background:var(--ink);color:var(--white);padding:5rem 0 0;border-top:1px solid rgba(255,255,255,.06)}
+.footer-grid{display:grid;gap:3rem;padding-bottom:3.5rem;border-bottom:1px solid rgba(255,255,255,.06)}
+.footer-brand p{color:rgba(255,255,255,.4);font-size:.875rem;line-height:1.8;margin:1.5rem 0;max-width:280px}
+.footer-col h4{font-family:'Cormorant Garamond',serif;font-size:.9rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:1.35rem}
+.footer-col a,.footer-col button{display:block;font-size:.865rem;color:rgba(255,255,255,.55);text-decoration:none;margin-bottom:.7rem;background:none;border:none;cursor:pointer;text-align:left;padding:0;transition:color .2s;font-family:'DM Sans',sans-serif}
+.footer-col a:hover,.footer-col button:hover{color:var(--white)}
+.footer-reg{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.35rem}
+.footer-reg span{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .65rem;border:1px solid rgba(184,146,42,.25);color:rgba(212,168,75,.8);border-radius:.125rem}
+.footer-bottom{padding:2rem 0;text-align:center;font-size:.72rem;color:rgba(255,255,255,.25);letter-spacing:.04em}
+.footer-bottom em{color:var(--gold);font-style:normal}
+.legal-strip{background:#060606;padding:2rem;text-align:center;font-size:.7rem;color:rgba(255,255,255,.22);line-height:1.9}
+.legal-strip a{color:rgba(212,168,75,.7);text-decoration:none}
+.legal-strip strong{color:rgba(255,255,255,.35)}
+
+.wa-float{position:fixed;bottom:1.75rem;right:1.75rem;z-index:900;display:flex;align-items:center;gap:0;text-decoration:none;cursor:pointer}
+.wa-bubble{width:3.25rem;height:3.25rem;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.45);transition:transform .3s;flex-shrink:0;position:relative}
+.wa-bubble::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(37,211,102,.3);animation:waPulse 2s ease-out infinite}
+@keyframes waPulse{0%{transform:scale(1);opacity:1}70%{transform:scale(1.4);opacity:0}100%{transform:scale(1.4);opacity:0}}
+.wa-label{background:#25d366;color:white;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.45rem .875rem .45rem .5rem;border-radius:9999px 0 0 9999px;transform:translateX(10px);opacity:0;transition:all .3s;white-space:nowrap;margin-right:-6px}
+.wa-float:hover .wa-bubble{transform:scale(1.08) translateY(-2px)}
+.wa-float:hover .wa-label{opacity:1;transform:translateX(0)}
+
+
+/* RESPONSIVE */
+@media(min-width:1024px){.footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+@media(max-width:767px){
+    .nav{display:none}
+    .hamburger{display:block}
+    .container{padding:0 1.25rem}
+    .section{padding:4rem 0}
+}
+
+/* ━━━━━━━━━━━ PAGE HERO ━━━━━━━━━━━ */
+.page-hero {
+    background: var(--ink);
+    padding: 9rem 0 5rem;
+    position: relative; overflow: hidden;
+    text-align: center;
+}
+.page-hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(184,146,42,.1), transparent);
+    pointer-events: none;
+}
+.page-hero h1 {
+    font-size: clamp(2.5rem,5vw,3.75rem);
+    color: var(--white); margin-bottom: 1.25rem;
+}
+.page-hero h1 em { color: var(--gold); font-style: italic; }
+.page-hero p {
+    font-size: 1.05rem; color: rgba(255,255,255,.45);
+    max-width: 540px; margin: 0 auto 2.5rem; line-height: 1.8;
+}
+
+/* ━━━━━━━━━━━ TABS ━━━━━━━━━━━ */
+.tabs-section {
+    display: flex; flex-wrap: wrap; gap: .5rem;
+    padding: 2.5rem 0 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 3rem;
+}
+.tab-btn {
+    padding: .6rem 1.25rem;
+    font-size: .8rem; font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: .04em;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: .125rem;
+    cursor: pointer; color: var(--ink-muted);
+    transition: all .25s;
+}
+.tab-btn:hover, .tab-btn.active {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--white);
+}
+
+/* ━━━━━━━━━━━ SECTION HEADERS ━━━━━━━━━━━ */
+.section-tag {
+    display: inline-block;
+    font-size: .65rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: .75rem;
+}
+.section-header {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 600; color: var(--ink);
+    margin-bottom: .75rem; line-height: 1.2;
+}
+.section-subtitle {
+    font-size: .9rem; color: var(--ink-muted); line-height: 1.8;
+    max-width: 560px; margin-bottom: 2.5rem;
+}
+
+/* ━━━━━━━━━━━ TOOLS GRID ━━━━━━━━━━━ */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 4rem;
+}
+.card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: .125rem;
+    overflow: hidden;
+    transition: all .35s;
+    position: relative;
+}
+.card::after {
+    content: ''; position: absolute;
+    bottom: 0; left: 0; right: 0; height: 2px;
+    background: var(--gold);
+    transform: scaleX(0); transition: transform .35s; transform-origin: left;
+}
+.card { border-top: 2px solid transparent; transition: border-top-color .3s, box-shadow .3s, transform .3s; }
+.card:hover { border-top-color: var(--gold); box-shadow: 0 20px 50px rgba(0,0,0,.08); transform: translateY(-2px); }
+
+.card-top {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+.card-header {
+    display: flex; align-items: flex-start; gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+.card-icon-wrap {
+    font-size: 1.75rem; flex-shrink: 0;
+    width: 3rem; height: 3rem;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--gold-pale); border: 1px solid var(--border-gold);
+}
+.card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem; font-weight: 600;
+    color: var(--ink); margin-bottom: .2rem;
+}
+.card-desc { font-size: .78rem; color: var(--ink-muted); line-height: 1.5; }
+
+/* Spec box */
+.spec-box { display: none; }
+.spec-row {
+    display: flex; gap: .6rem;
+    font-size: .78rem; color: var(--ink-muted);
+    line-height: 1.6; margin-bottom: .5rem;
+}
+.spec-icon { flex-shrink: 0; }
+.spec-text strong { color: var(--ink); }
+
+/* ━━━━━━━━━━━ CALC BODY (expanded calculator) ━━━━━━━━━━━ */
+.calc-body {
+    padding: 1.5rem;
+    border-top: 1px solid var(--border);
+    background: var(--white);
+}
+.calc-divider {
+    height: 1px; background: var(--border);
+    margin: 1.25rem 0;
+}
+.input-group { margin-bottom: 1rem; }
+.input-top {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: .35rem;
+}
+.input-name {
+    font-size: .78rem; font-weight: 500; color: var(--ink);
+}
+.input-editable {
+    font-size: .85rem; font-weight: 600; color: var(--gold);
+    border: none; background: transparent; text-align: right;
+    font-family: 'DM Sans', sans-serif; cursor: pointer;
+    min-width: 60px; max-width: 100px;
+}
+input[type=range] {
+    width: 100%; accent-color: var(--gold);
+    height: 3px; cursor: pointer;
+}
+
+.result-box { background: #0c0c0c; border: 1px solid rgba(184,146,42,.2); padding: 1.5rem; margin-top: 1.5rem; position: relative; overflow: hidden; }
+.result-box::before { content:""; position:absolute; top:0; left:0; right:0; height:1px; background:linear-gradient(90deg,transparent,var(--gold),var(--gold-light),var(--gold),transparent); }
+.result-label {
+    font-size: .68rem; letter-spacing: .1em; text-transform: uppercase;
+    color: rgba(255,255,255,.4); margin-bottom: .3rem;
+}
+.result-value { font-family: "Cormorant Garamond",serif; font-size: 2.25rem; font-weight: 600; color: var(--gold); line-height: 1; letter-spacing: -.02em; }
+.result-breakdown {
+    display: flex; gap: 1rem; flex-wrap: wrap;
+    margin-top: 1rem; padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,.08);
+}
+.bd-item { flex: 1; min-width: 90px; }
+.bd-label { font-size: .65rem; color: rgba(255,255,255,.35); letter-spacing: .06em; text-transform: uppercase; margin-bottom: .2rem; }
+.bd-val { font-size: .9rem; font-weight: 600; color: rgba(255,255,255,.8); }
+
+.green { color: #22c55e; }
+.blue { color: #60a5fa; }
+
+/* Mini chart */
+.mini-chart { margin: .75rem 0; }
+.mini-chart canvas { width:100% !important; height: 80px !important; }
+
+/* Disclaimer */
+.disclaimer-section {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: .125rem;
+    padding: 2rem;
+    margin: 2rem 0;
+    font-size: .78rem; color: var(--ink-muted); line-height: 1.8;
+}
+.disclaimer-box {
+    background: rgba(184,146,42,.06);
+    border: 1px solid rgba(184,146,42,.2);
+    border-radius: .125rem;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+    font-size: .75rem; color: var(--ink-muted); line-height: 1.7;
+}
+
+/* How-to toggle */
+.how-to { margin-top: 1rem; }
+.how-to-toggle {
+    background: none; border: none; cursor: pointer;
+    font-size: .78rem; color: var(--gold); font-family: 'DM Sans', sans-serif;
+    padding: 0; font-weight: 500;
+}
+.ht-arrow { display: inline-block; transition: transform .25s; }
+.how-to-steps {
+    font-size: .78rem; color: var(--ink-muted); line-height: 1.8;
+    margin-top: .75rem; padding-left: 1rem;
+    border-left: 2px solid var(--border-gold);
+    display: none;
+}
+
+/* City select */
+.city-select {
+    width: 100%;
+    padding: .5rem .75rem;
+    border: 1px solid var(--border);
+    border-radius: .125rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: .82rem; color: var(--ink);
+    background: var(--white); cursor: pointer;
+    margin-bottom: .75rem;
+}
+.city-tier-badge {
+    display: inline-block;
+    font-size: .65rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+    padding: .15rem .55rem;
+    border: 1px solid var(--border-gold); color: var(--gold);
+    border-radius: 9999px; margin-bottom: .75rem;
+}
+
+/* Section wrapper */
+.section { background: var(--cream); padding: 5rem 0; }
+.section + .section { background: var(--white); }
+.section-gray { background: var(--cream); }
+
+/* ━━━━━━━━━━━ CONSULT CTA STRIP ━━━━━━━━━━━ */
+.cta-strip {
+    background: var(--ink); padding: 6rem 0;
+    text-align: center; position: relative; overflow: hidden;
+}
+.cta-strip::before {
+    content: ''; position: absolute; bottom: -30%; left: 50%;
+    transform: translateX(-50%); width: 600px; height: 400px;
+    background: radial-gradient(ellipse, rgba(184,146,42,.12), transparent 65%);
+}
+.cta-strip h2 { font-size: clamp(2rem,4vw,3rem); color: var(--white); margin-bottom: 1.25rem; position: relative; }
+.cta-strip p { color: rgba(255,255,255,.4); margin-bottom: 2.5rem; position: relative; font-size: .95rem; }
+.cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; position: relative; }
+.cta-note { font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; margin-top:2rem; margin-bottom:0!important; opacity:.35; }
+
+/* ━━━━━━━━━━━ RESPONSIVE ━━━━━━━━━━━ */
+@media(max-width:767px) {
+    .nav { display: none; }
+    .hamburger { display: block; }
+    .container { padding: 0 1.25rem; }
+    .page-hero { padding: 7rem 0 4rem; }
+    .tools-grid { grid-template-columns: 1fr; }
+    .tabs-section { gap: .35rem; }
+    .tab-btn { padding: .5rem .875rem; font-size: .75rem; }
+}
+
+/* RESPONSIVE (tools) */
+@media(max-width:767px){.tools-grid{grid-template-columns:1fr}.tabs-section{gap:.35rem}}
+
+/* ━━━━━━━━━━━ DOWNLOAD MODAL ━━━━━━━━━━━ */
+.dl-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:2000;align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.dl-overlay.open{display:flex}
+.dl-modal{background:var(--white);border-radius:.25rem;width:100%;max-width:460px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.4);animation:dlUp .3s cubic-bezier(.4,0,.2,1)}
+@keyframes dlUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.dl-header{background:var(--ink);padding:1.75rem 1.5rem 1.5rem;text-align:center;position:relative}
+.dl-header::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),var(--gold-light),var(--gold),transparent)}
+.dl-logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--white);letter-spacing:.02em}
+.dl-logo span{color:var(--gold)}
+.dl-logo-sub{font-size:.6rem;color:rgba(255,255,255,.35);letter-spacing:.14em;text-transform:uppercase;margin-top:.25rem}
+.dl-body{padding:1.5rem}
+.dl-calc-name{font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:.75rem}
+.dl-congrats{background:var(--gold-pale);border:1px solid var(--border-gold);border-radius:.125rem;padding:1.25rem;margin-bottom:1.25rem;text-align:center}
+.dl-congrats-emoji{font-size:2rem;margin-bottom:.4rem}
+.dl-congrats-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--ink);margin-bottom:.3rem}
+.dl-congrats-msg{font-size:.78rem;color:var(--ink-muted);line-height:1.65}
+.dl-main-label{font-size:.65rem;color:var(--ink-muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.3rem;text-align:center}
+.dl-main-result{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:600;color:var(--gold);text-align:center;line-height:1;margin-bottom:1.25rem}
+.dl-results{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-bottom:1.25rem}
+.dl-result-item{background:var(--cream);border:1px solid var(--border);border-radius:.125rem;padding:.75rem;text-align:center}
+.dl-result-label{font-size:.62rem;color:var(--ink-muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.3rem}
+.dl-result-value{font-size:1rem;font-weight:700;color:var(--ink)}
+.dl-next{background:var(--ink);border-radius:.125rem;padding:1rem 1.25rem;margin-bottom:1.25rem}
+.dl-next-title{font-size:.65rem;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem}
+.dl-next-text{font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.7}
+.dl-actions{display:flex;gap:.5rem;margin-bottom:0}
+.dl-btn{flex:1;padding:.7rem 1rem;border:none;border-radius:.125rem;font-size:.75rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s}
+.dl-btn-save{background:var(--gold);color:var(--white)}
+.dl-btn-save:hover{background:var(--gold-light)}
+.dl-btn-close{background:var(--cream);color:var(--ink-muted);border:1px solid var(--border)}
+.dl-btn-close:hover{background:var(--border)}
+.dl-footer{background:var(--cream);border-top:1px solid var(--border);padding:.875rem 1.5rem;text-align:center;font-size:.62rem;color:var(--ink-muted);letter-spacing:.04em;line-height:1.8}
+.dl-footer strong{color:var(--gold)}
+/* Result action buttons under each calculator */
+.result-actions{display:flex;gap:.5rem;margin-top:.875rem;flex-wrap:wrap}
+.ra-btn{flex:1;min-width:0;display:flex;align-items:center;justify-content:center;gap:.35rem;font-size:.68rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.55rem .75rem;border-radius:.125rem;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;white-space:nowrap}
+.ra-expert{background:var(--ink);color:var(--white)}
+.ra-expert:hover{background:var(--ink-soft)}
+.ra-book{background:transparent;color:var(--gold);border:1px solid var(--border-gold)}
+.ra-book:hover{background:var(--gold-pale)}
+.ra-dl{background:var(--gold);color:var(--white)}
+.ra-dl:hover{background:var(--gold-light)}
+@media print{
+    body>*:not(#dlOverlay){display:none!important}
+    #dlOverlay{display:block!important;position:static!important;background:white!important;backdrop-filter:none!important;padding:0!important}
+    .dl-modal{box-shadow:none!important;max-width:100%!important;border-radius:0!important;page-break-inside:avoid}
+    .dl-actions,.ra-btn{display:none!important}
+    .dl-header{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .dl-congrats{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+
+/* ── Social icons ── */
+.footer-social{display:flex;flex-direction:column;gap:.5rem;margin-top:.25rem}
+.social-icon-link{display:flex;align-items:center;gap:.6rem;color:rgba(255,255,255,.45);text-decoration:none;font-size:.8rem;transition:color .2s}
+.social-icon-link:hover{color:var(--gold)}
+.social-icon-link svg{flex-shrink:0;opacity:.7;transition:opacity .2s}
+.social-icon-link:hover svg{opacity:1}
+
+
+        /* ── MINI CHART ── */
+        .mini-chart { display: flex; align-items: flex-end; gap: 4px; height: 36px; margin-top: 0.875rem; justify-content: center; opacity: 0.9; }
+        .bar { flex: 1; border-radius: 3px 3px 0 0; max-width: 20px; transition: height 0.5s cubic-bezier(0.34,1.56,0.64,1); }
+        .bar-inv { background: #60a5fa; }
+        .bar-ret { background: var(--gold, #b8922a); }
+        /* ── RESULT POP ANIMATION ── */
+        .result-value.pop { animation: pop 0.25s ease; }
+        @keyframes pop { 0%{transform:scale(0.95)} 60%{transform:scale(1.05)} 100%{transform:scale(1)} }
+        @keyframes fadeUp { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
+        /* ── HOW TO USE ── */
+        .how-to { margin: 0 1.5rem 1.25rem; }
+        .how-to-toggle { display: flex; align-items: center; gap: 0.5rem; background: none; border: none; cursor: pointer; font-family: inherit; font-size: 0.78rem; font-weight: 600; color: var(--ink-muted, #555); padding: 0; transition: color 0.2s; width: 100%; text-align: left; }
+        .how-to-toggle:hover { color: var(--gold, #b8922a); }
+        .how-to-toggle .ht-arrow { font-size: 0.65rem; transition: transform 0.25s; display: inline-block; }
+        .how-to-toggle.open .ht-arrow { transform: rotate(90deg); }
+        .how-to-steps { display: none; margin-top: 0.6rem; padding: 0.75rem 1rem; background: white; border: 1px solid var(--border, #e0d9ce); border-radius: 0.5rem; }
+        .how-to-steps.open { display: block; animation: fadeUp 0.2s ease; }
+        .how-to-steps ol { margin: 0; padding-left: 1.2rem; font-size: 0.8rem; line-height: 1.8; color: var(--ink-muted, #555); }
+        .how-to-steps li { margin-bottom: 0.25rem; }
+        
+.nav-portal{
+  font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink);border:1px solid var(--border);
+  padding:.6rem 1.1rem;border-radius:.25rem;
+  text-decoration:none;
+  transition:color .2s,border-color .2s,background .2s;
+  margin-left:.35rem;
+}
+.nav-portal:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-pale)}
+
+
+/* ── Action Buttons ── */
+.result-actions{display:flex;gap:.5rem;margin-top:1.25rem}
+.action-btn{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:.4rem;
+    padding:.65rem .5rem;border:none;font-size:.68rem;font-weight:700;letter-spacing:.08em;
+    text-transform:uppercase;cursor:pointer;font-family:'DM Sans',sans-serif;
+    transition:all .25s;white-space:nowrap;}
+.action-btn-dl{background:var(--gold);color:var(--white);}
+.action-btn-dl:hover{background:var(--gold-light);box-shadow:0 4px 16px rgba(184,146,42,.35);}
+.action-btn-wa{background:rgba(255,255,255,.05);color:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.1);}
+.action-btn-wa:hover{border-color:rgba(184,146,42,.4);color:var(--gold);}
+/* ── Download Modal ── */
+.dl-overlay{display:none;position:fixed;inset:0;background:rgba(8,8,8,.82);z-index:2000;align-items:center;justify-content:center;padding:1.25rem;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.dl-overlay.open{display:flex}
+.dl-modal{background:var(--white);width:100%;max-width:440px;overflow:hidden;box-shadow:0 32px 80px rgba(0,0,0,.35);animation:modalIn .35s cubic-bezier(.34,1.56,.64,1)}
+@keyframes modalIn{from{opacity:0;transform:translateY(24px) scale(.97)}to{opacity:1;transform:none}}
+.dl-header{background:var(--ink);padding:2rem 2rem 1.75rem;position:relative;overflow:hidden}
+.dl-header::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),var(--gold-light),var(--gold),transparent)}
+.dl-logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--white);letter-spacing:.02em;margin-bottom:.2rem}
+.dl-logo span{color:var(--gold)}
+.dl-logo-sub{font-size:.6rem;color:rgba(255,255,255,.35);letter-spacing:.15em;text-transform:uppercase;font-weight:500}
+.dl-body{padding:2rem}
+</style>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Finaura™ Free Financial Calculators",
+    "url": "https://www.finauraindia.com/tools.html",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+    },
+    "description": "Free financial calculators — SIP, lumpsum, retirement, EMI, ELSS, NPS, HRA, tax and more. Built by Finaura™, AMFI-registered mutual fund distributor in Ludhiana.",
+    "provider": {
+        "@type": "FinancialService",
+        "name": "Finaura Investment Solution",
+        "url": "https://www.finauraindia.com"
+    },
+    "featureList": [
+        "SIP Calculator",
+        "Lumpsum Calculator",
+        "Retirement Planner",
+        "EMI Calculator",
+        "ELSS Tax Calculator",
+        "NPS Calculator",
+        "HRA Calculator",
+        "Old vs New Tax Regime",
+        "Step-Up SIP Calculator"
+    ]
+}
+</script>
+    <meta property="og:image" content="https://www.finauraindia.com/hero-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Financial Calculators — SIP, EMI, Tax | Finaura™">
+    <meta name="twitter:description" content="Free financial calculators — SIP, lumpsum, retirement, EMI, tax, insurance. Professional-grade tools, completely free. No sign-up required.">
+    <meta name="twitter:image" content="https://www.finauraindia.com/hero-image.png">ipt>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-mark">Finaura<span>™</span></span>
+            <span class="logo-sub">Investment Solution</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="tools.html" class="nav-link active">Calculators</a>
+            <a href="login.html" class="nav-portal">Portfolio Login</a>
+            <button class="nav-cta" onclick="bookSession()">Consult Now</button>
+        </nav>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+    </div>
+    <div class="mob-menu" id="mobMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="tools.html" class="nav-link active">Calculators</a>
+        <button class="nav-cta" style="width:fit-content;margin-top:.5rem" onclick="bookSession()">Consult Now</button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+    <div class="container" style="position:relative;z-index:1">
+        <div class="badge" style="display:inline-flex;align-items:center;gap:.4rem;margin-bottom:2rem">&#10022; Free Financial Calculators &nbsp;·&nbsp; ARN293004</div>
+        <h1>Know Your Numbers <em>Before You Invest.</em></h1>
+        <p>Professional-grade calculators — SIP, retirement, EMI, ELSS, tax, NPS and more. Real math. Instant results. Free for every Indian family. Brought to you by Finaura™, your mutual fund advisor in Ludhiana.</p>
+    </div>
+</section>
+
+<!-- CALCULATORS -->
+<div class="container" style="padding-top:3rem;padding-bottom:6rem">
+
+<div class="hero-section">
+    <div class="badge">&#10022; Free Financial Calculators &nbsp;·&nbsp; ARN293004</div>
+    <h2 class="hero-title">Know Your Numbers <span>Before You Invest</span></h2>
+    <p class="hero-subtitle">Professional-grade financial calculators — SIP, retirement, tax, EMI and more. Real math, instant results. Free for every Indian family.</p>
+</div>
+
+<div class="tabs-section">
+    <button class="tab-btn active" onclick="filterCat('all',this)">All Tools</button>
+    <button class="tab-btn" onclick="filterCat('mf',this)">📈 Mutual Fund</button>
+    <button class="tab-btn" onclick="filterCat('goal',this)">🎯 Life Goals</button>
+    <button class="tab-btn" onclick="filterCat('fixed',this)">🏛️ Fixed Income</button>
+    <button class="tab-btn" onclick="filterCat('tax',this)">🧾 Tax & Budget</button>
+    <button class="tab-btn" onclick="filterCat('loan',this)">🏠 Loans</button>
+</div>
+
+
+
+<div class="section" id="sec-mf" data-cat="mf">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">📈 Mutual Fund & Wealth</div>
+      <h2 style="font-size:clamp(1.1rem,2vw,1.35rem);font-weight:700;color:var(--ink);margin:0.5rem 0 0.25rem;line-height:1.3;">SIP, ELSS & Mutual Fund Calculators</h2>
+      <p class="section-subtitle">SIPs, lumpsum, ELSS, returns & more — your core wealth building tools</p>
+    </div>
+    <div class="tools-grid">
+      <div class="card" style="animation-delay:0.00s">
+        <div class="card-top">
+          <div class="card-header">
+            <div class="card-icon-wrap">📊</div>
+            <div><div class="card-title">SIP Calculator</div><div class="card-desc">Estimate how much your monthly SIP can grow over time</div></div>
+          </div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-row"><span class="spec-icon">📌</span><span class="spec-text"><strong>What it does:</strong> Calculates future value of regular monthly investments using compound interest</span></div>
+          <div class="spec-row"><span class="spec-icon">👤</span><span class="spec-text"><strong>Who uses it:</strong> Salaried professionals, beginners, and anyone doing monthly SIPs</span></div>
+          <div class="spec-row"><span class="spec-icon">🎯</span><span class="spec-text"><strong>What you get:</strong> Total corpus, amount invested vs returns earned</span></div>
+        </div>
+        
+        <div class="how-to">
+          <button class="how-to-toggle" onclick="toggleHowTo(this)">
+            <span class="ht-arrow">▶</span> How to use this calculator
+          </button>
+          <div class="how-to-steps">
+            <ol>
+                <li><strong>Enter</strong> the amount you plan to invest every month</li>
+                <li><strong>Set</strong> the expected annual return (12% is a common long-term MF average)</li>
+                <li><strong>Choose</strong> how many years you will stay invested</li>
+                <li><strong>See</strong> your total corpus, invested amount, and returns instantly</li>
+            </ol>
+          </div>
+        </div><hr class="calc-divider">
+        <div class="calc-body">
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Monthly SIP Amount</span><input class="input-editable" id="sip-amt-txt" type="number" value="5000" min="500" max="100000" oninput="syncFromText('sip-amt','sip-amt-txt'); updateSIP()"></div>
+            <input type="range" id="sip-amt" min="500" max="100000" step="500" value="5000" oninput="syncFromRange('sip-amt','sip-amt-txt'); updateSIP()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Expected Return (p.a.)</span><input class="input-editable" id="sip-rate-txt" type="number" value="12" min="1" max="30" step="0.5" oninput="syncFromText('sip-rate','sip-rate-txt'); updateSIP()"></div>
+            <input type="range" id="sip-rate" min="1" max="30" step="0.5" value="12" oninput="syncFromRange('sip-rate','sip-rate-txt'); updateSIP()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Time Period (years)</span><input class="input-editable" id="sip-yr-txt" type="number" value="10" min="1" max="40" oninput="syncFromText('sip-yr','sip-yr-txt'); updateSIP()"></div>
+            <input type="range" id="sip-yr" min="1" max="40" step="1" value="10" oninput="syncFromRange('sip-yr','sip-yr-txt'); updateSIP()">
+          </div>
+          <div class="result-box">
+            <div class="result-label">Total Corpus</div>
+            <div class="result-value" id="sip-result">—</div>
+            <div class="result-breakdown">
+              <div class="bd-item"><div class="bd-label">Invested</div><div class="bd-val blue" id="sip-invested">—</div></div>
+              <div class="bd-item"><div class="bd-label">Returns</div><div class="bd-val green" id="sip-returns">—</div></div>
+            </div>
+            <div class="mini-chart" id="sip-chart"></div>
+          
+            <div class="result-actions">
+              <button class="action-btn action-btn-dl" onclick="showDownload(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+                Download Report
+              </button>
+              <button class="action-btn action-btn-wa" onclick="talkExpert(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Talk to Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="animation-delay:0.06s">
+        <div class="card-top">
+          <div class="card-header">
+            <div class="card-icon-wrap">💰</div>
+            <div><div class="card-title">Lumpsum Calculator</div><div class="card-desc">Find the future value of one-time investments</div></div>
+          </div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-row"><span class="spec-icon">📌</span><span class="spec-text"><strong>What it does:</strong> Shows how a one-time investment grows with compounding over selected years</span></div>
+          <div class="spec-row"><span class="spec-icon">👤</span><span class="spec-text"><strong>Who uses it:</strong> Investors using bonuses, maturing FDs, or windfall savings</span></div>
+          <div class="spec-row"><span class="spec-icon">🎯</span><span class="spec-text"><strong>What you get:</strong> Final maturity value and total gain from your one-time investment</span></div>
+        </div>
+        
+        <div class="how-to">
+          <button class="how-to-toggle" onclick="toggleHowTo(this)">
+            <span class="ht-arrow">▶</span> How to use this calculator
+          </button>
+          <div class="how-to-steps">
+            <ol>
+                <li><strong>Enter</strong> the one-time amount you want to invest today</li>
+                <li><strong>Set</strong> the expected annual return from your mutual fund</li>
+                <li><strong>Choose</strong> how many years you will stay invested</li>
+                <li><strong>See</strong> the final maturity value and your total gain</li>
+            </ol>
+          </div>
+        </div><hr class="calc-divider">
+        <div class="calc-body">
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Investment Amount</span><input class="input-editable" id="ls-amt-txt" type="number" value="100000" min="1000" max="5000000" oninput="syncFromText('ls-amt','ls-amt-txt'); updateLS()"></div>
+            <input type="range" id="ls-amt" min="1000" max="5000000" step="1000" value="100000" oninput="syncFromRange('ls-amt','ls-amt-txt'); updateLS()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Expected Return (p.a.)</span><input class="input-editable" id="ls-rate-txt" type="number" value="12" min="1" max="30" step="0.5" oninput="syncFromText('ls-rate','ls-rate-txt'); updateLS()"></div>
+            <input type="range" id="ls-rate" min="1" max="30" step="0.5" value="12" oninput="syncFromRange('ls-rate','ls-rate-txt'); updateLS()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Time Period (years)</span><input class="input-editable" id="ls-yr-txt" type="number" value="10" min="1" max="40" oninput="syncFromText('ls-yr','ls-yr-txt'); updateLS()"></div>
+            <input type="range" id="ls-yr" min="1" max="40" step="1" value="10" oninput="syncFromRange('ls-yr','ls-yr-txt'); updateLS()">
+          </div>
+          <div class="result-box">
+            <div class="result-label">Maturity Value</div>
+            <div class="result-value" id="ls-result">—</div>
+            <div class="result-breakdown">
+              <div class="bd-item"><div class="bd-label">Invested</div><div class="bd-val blue" id="ls-invested">—</div></div>
+              <div class="bd-item"><div class="bd-label">Gain</div><div class="bd-val green" id="ls-returns">—</div></div>
+            </div>
+            <div class="mini-chart" id="ls-chart"></div>
+          
+            <div class="result-actions">
+              <button class="action-btn action-btn-dl" onclick="showDownload(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+                Download Report
+              </button>
+              <button class="action-btn action-btn-wa" onclick="talkExpert(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Talk to Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="animation-delay:0.12s">
+        <div class="card-top">
+          <div class="card-header">
+            <div class="card-icon-wrap">📈</div>
+            <div><div class="card-title">Step-Up SIP Calculator</div><div class="card-desc">Also called Inflation-Adjusted SIP — increase your SIP every year as your salary grows</div></div>
+          </div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-row"><span class="spec-icon">📌</span><span class="spec-text"><strong>What it does:</strong> Calculates corpus when you increase your monthly SIP by a fixed % every year — matching salary hikes or inflation</span></div>
+          <div class="spec-row"><span class="spec-icon">👤</span><span class="spec-text"><strong>Who uses it:</strong> Salaried professionals who get annual increments and want to grow their SIP accordingly</span></div>
+          <div class="spec-row"><span class="spec-icon">🎯</span><span class="spec-text"><strong>What you get:</strong> Final corpus vs a flat SIP — shows exactly how much more wealth a step-up builds</span></div>
+        </div>
+        
+        <div class="how-to">
+          <button class="how-to-toggle" onclick="toggleHowTo(this)">
+            <span class="ht-arrow">▶</span> How to use this calculator
+          </button>
+          <div class="how-to-steps">
+            <ol>
+                <li><strong>Enter</strong> your current monthly SIP amount</li>
+                <li><strong>Set</strong> the % by which you will increase SIP each year (10% is ideal)</li>
+                <li><strong>Choose</strong> expected return rate and investment duration</li>
+                <li><strong>See</strong> final corpus and how much MORE you earn vs a flat SIP</li>
+            </ol>
+          </div>
+        </div><hr class="calc-divider">
+        <div class="calc-body">
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Starting Monthly SIP</span><input class="input-editable" id="step-amt-txt" type="number" value="5000" min="500" max="100000" oninput="syncFromText('step-amt','step-amt-txt'); updateStepSIP()"></div>
+            <input type="range" id="step-amt" min="500" max="100000" step="500" value="5000" oninput="syncFromRange('step-amt','step-amt-txt'); updateStepSIP()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Annual Step-Up %</span><input class="input-editable" id="step-hike-txt" type="number" value="10" min="1" max="50" step="1" oninput="syncFromText('step-hike','step-hike-txt'); updateStepSIP()"></div>
+            <input type="range" id="step-hike" min="1" max="50" step="1" value="10" oninput="syncFromRange('step-hike','step-hike-txt'); updateStepSIP()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Expected Return (p.a.)</span><input class="input-editable" id="step-rate-txt" type="number" value="12" min="1" max="30" step="0.5" oninput="syncFromText('step-rate','step-rate-txt'); updateStepSIP()"></div>
+            <input type="range" id="step-rate" min="1" max="30" step="0.5" value="12" oninput="syncFromRange('step-rate','step-rate-txt'); updateStepSIP()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Time Period (years)</span><input class="input-editable" id="step-yr-txt" type="number" value="10" min="1" max="40" oninput="syncFromText('step-yr','step-yr-txt'); updateStepSIP()"></div>
+            <input type="range" id="step-yr" min="1" max="40" step="1" value="10" oninput="syncFromRange('step-yr','step-yr-txt'); updateStepSIP()">
+          </div>
+          <div class="result-box">
+            <div class="result-label">Step-Up SIP Corpus</div>
+            <div class="result-value" id="step-result">—</div>
+            <div class="result-breakdown">
+              <div class="bd-item"><div class="bd-label">Total Invested</div><div class="bd-val blue" id="step-invested">—</div></div>
+              <div class="bd-item"><div class="bd-label">vs Flat SIP</div><div class="bd-val green" id="step-vs-flat">—</div></div>
+            </div>
+          
+            <div class="result-actions">
+              <button class="action-btn action-btn-dl" onclick="showDownload(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+                Download Report
+              </button>
+              <button class="action-btn action-btn-wa" onclick="talkExpert(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Talk to Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="animation-delay:0.24s">
+        <div class="card-top">
+          <div class="card-header">
+            <div class="card-icon-wrap">💎</div>
+            <div><div class="card-title">ELSS Tax Saving Calculator</div><div class="card-desc">Save tax under 80C and build wealth simultaneously with ELSS funds</div></div>
+          </div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-row"><span class="spec-icon">📌</span><span class="spec-text"><strong>What it does:</strong> Calculates your ELSS corpus growth AND the tax you save under Section 80C — two benefits in one calculator</span></div>
+          <div class="spec-row"><span class="spec-icon">👤</span><span class="spec-text"><strong>Who uses it:</strong> Salaried taxpayers who want to save ₹46,800 in tax every year while building long-term equity wealth</span></div>
+          <div class="spec-row"><span class="spec-icon">🎯</span><span class="spec-text"><strong>What you get:</strong> Total ELSS corpus, tax saved annually, and net effective return including tax benefit — the real power of ELSS</span></div>
+        </div>
+        <div class="how-to">
+          <button class="how-to-toggle" onclick="toggleHowTo(this)">
+            <span class="ht-arrow">▶</span> How to use this calculator
+          </button>
+          <div class="how-to-steps">
+            <ol>
+              <li><strong>Enter</strong> the amount you invest in ELSS every month via SIP</li>
+              <li><strong>Set</strong> the expected annual return (ELSS funds historically give 12–15%)</li>
+              <li><strong>Choose</strong> your investment duration (minimum 3-year lock-in applies)</li>
+              <li><strong>Select</strong> your income tax slab to calculate the exact tax you save</li>
+              <li><strong>See</strong> total corpus, tax saved per year, and your net effective return</li>
+            </ol>
+          </div>
+        </div>
+        <hr class="calc-divider">
+        <div class="calc-body">
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Monthly ELSS SIP</span><input class="input-editable" id="elss-amt-txt" type="number" value="12500" min="500" max="100000" oninput="syncFromText('elss-amt','elss-amt-txt'); updateELSS()"></div>
+            <input type="range" id="elss-amt" min="500" max="100000" step="500" value="12500" oninput="syncFromRange('elss-amt','elss-amt-txt'); updateELSS()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Expected Return (p.a.)</span><input class="input-editable" id="elss-rate-txt" type="number" value="13" min="5" max="25" step="0.5" oninput="syncFromText('elss-rate','elss-rate-txt'); updateELSS()"></div>
+            <input type="range" id="elss-rate" min="5" max="25" step="0.5" value="13" oninput="syncFromRange('elss-rate','elss-rate-txt'); updateELSS()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Investment Duration (years)</span><input class="input-editable" id="elss-yr-txt" type="number" value="10" min="3" max="30" oninput="syncFromText('elss-yr','elss-yr-txt'); updateELSS()"></div>
+            <input type="range" id="elss-yr" min="3" max="30" step="1" value="10" oninput="syncFromRange('elss-yr','elss-yr-txt'); updateELSS()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Your Income Tax Slab</span></div>
+            <select class="city-select" id="elss-slab" onchange="updateELSS()">
+              <option value="0.05">5% Slab (₹2.5L – ₹5L)</option>
+              <option value="0.20">20% Slab (₹5L – ₹10L)</option>
+              <option value="0.30" selected>30% Slab (Above ₹10L)</option>
+            </select>
+          </div>
+          <div class="result-box">
+            <div class="result-label">Total ELSS Corpus</div>
+            <div class="result-value" id="elss-result">—</div>
+            <div class="result-breakdown">
+              <div class="bd-item"><div class="bd-label">Tax Saved Per Year</div><div class="bd-val green" id="elss-taxsaved">—</div></div>
+              <div class="bd-item"><div class="bd-label">Total Tax Saved</div><div class="bd-val green" id="elss-totaltax">—</div></div>
+              <div class="bd-item"><div class="bd-label">Amount Invested</div><div class="bd-val blue" id="elss-invested">—</div></div>
+            </div>
+            <div class="mini-chart" id="elss-chart"></div>
+          
+            <div class="result-actions">
+              <button class="action-btn action-btn-dl" onclick="showDownload(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+                Download Report
+              </button>
+              <button class="action-btn action-btn-wa" onclick="talkExpert(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Talk to Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="animation-delay:0.30s">
+        <div class="card-top">
+          <div class="card-header">
+            <div class="card-icon-wrap">🔄</div>
+            <div><div class="card-title">SWP Calculator</div><div class="card-desc">Know how long your investment lasts with monthly withdrawals</div></div>
+          </div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-row"><span class="spec-icon">📌</span><span class="spec-text"><strong>What it does:</strong> Shows how long your corpus survives if you withdraw a fixed amount monthly</span></div>
+          <div class="spec-row"><span class="spec-icon">👤</span><span class="spec-text"><strong>Who uses it:</strong> Retirees or anyone needing regular passive income from mutual funds</span></div>
+          <div class="spec-row"><span class="spec-icon">🎯</span><span class="spec-text"><strong>What you get:</strong> Duration corpus survives and total amount withdrawn</span></div>
+        </div>
+        
+        <div class="how-to">
+          <button class="how-to-toggle" onclick="toggleHowTo(this)">
+            <span class="ht-arrow">▶</span> How to use this calculator
+          </button>
+          <div class="how-to-steps">
+            <ol>
+                <li><strong>Enter</strong> your total invested corpus in the fund</li>
+                <li><strong>Set</strong> how much you want to withdraw every month</li>
+                <li><strong>Choose</strong> the expected return rate on the remaining corpus</li>
+                <li><strong>See</strong> how many years your money lasts and total withdrawn</li>
+            </ol>
+          </div>
+        </div><hr class="calc-divider">
+        <div class="calc-body">
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Corpus Amount</span><input class="input-editable" id="swp-corpus-txt" type="number" value="1000000" min="100000" max="10000000" oninput="syncFromText('swp-corpus','swp-corpus-txt'); updateSWP()"></div>
+            <input type="range" id="swp-corpus" min="100000" max="10000000" step="10000" value="1000000" oninput="syncFromRange('swp-corpus','swp-corpus-txt'); updateSWP()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Monthly Withdrawal</span><input class="input-editable" id="swp-wd-txt" type="number" value="8000" min="1000" max="200000" oninput="syncFromText('swp-wd','swp-wd-txt'); updateSWP()"></div>
+            <input type="range" id="swp-wd" min="1000" max="200000" step="500" value="8000" oninput="syncFromRange('swp-wd','swp-wd-txt'); updateSWP()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Expected Return (p.a.)</span><input class="input-editable" id="swp-rate-txt" type="number" value="10" min="1" max="20" step="0.5" oninput="syncFromText('swp-rate','swp-rate-txt'); updateSWP()"></div>
+            <input type="range" id="swp-rate" min="1" max="20" step="0.5" value="10" oninput="syncFromRange('swp-rate','swp-rate-txt'); updateSWP()">
+          </div>
+          <div class="result-box">
+            <div class="result-label">Corpus Lasts For</div>
+            <div class="result-value" id="swp-result">—</div>
+            <div class="result-breakdown">
+              <div class="bd-item"><div class="bd-label">Total Withdrawn</div><div class="bd-val green" id="swp-total">—</div></div>
+            </div>
+          
+            <div class="result-actions">
+              <button class="action-btn action-btn-dl" onclick="showDownload(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+                Download Report
+              </button>
+              <button class="action-btn action-btn-wa" onclick="talkExpert(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Talk to Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="animation-delay:0.36s">
+        <div class="card-top">
+          <div class="card-header">
+            <div class="card-icon-wrap">📉</div>
+            <div><div class="card-title">CAGR Calculator</div><div class="card-desc">Know your average yearly growth rate from start to end</div></div>
+          </div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-row"><span class="spec-icon">📌</span><span class="spec-text"><strong>What it does:</strong> Finds your Compound Annual Growth Rate between an initial and final investment value</span></div>
+          <div class="spec-row"><span class="spec-icon">👤</span><span class="spec-text"><strong>Who uses it:</strong> Equity, gold, or long-term investors comparing different investments</span></div>
+          <div class="spec-row"><span class="spec-icon">🎯</span><span class="spec-text"><strong>What you get:</strong> Annualised return % and total gain over the period</span></div>
+        </div>
+        
+        <div class="how-to">
+          <button class="how-to-toggle" onclick="toggleHowTo(this)">
+            <span class="ht-arrow">▶</span> How to use this calculator
+          </button>
+          <div class="how-to-steps">
+            <ol>
+                <li><strong>Enter</strong> the amount you originally invested</li>
+                <li><strong>Enter</strong> the current or final value of that investment</li>
+                <li><strong>Choose</strong> how many years you held the investment</li>
+                <li><strong>See</strong> your true annualised growth rate and total gain</li>
+            </ol>
+          </div>
+        </div><hr class="calc-divider">
+        <div class="calc-body">
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Initial Investment</span><input class="input-editable" id="cagr-init-txt" type="number" value="100000" min="1000" max="5000000" oninput="syncFromText('cagr-init','cagr-init-txt'); updateCAGR()"></div>
+            <input type="range" id="cagr-init" min="1000" max="5000000" step="1000" value="100000" oninput="syncFromRange('cagr-init','cagr-init-txt'); updateCAGR()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Final Value</span><input class="input-editable" id="cagr-final-txt" type="number" value="300000" min="1000" max="10000000" oninput="syncFromText('cagr-final','cagr-final-txt'); updateCAGR()"></div>
+            <input type="range" id="cagr-final" min="1000" max="10000000" step="1000" value="300000" oninput="syncFromRange('cagr-final','cagr-final-txt'); updateCAGR()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Time Period (years)</span><input class="input-editable" id="cagr-yr-txt" type="number" value="10" min="1" max="40" oninput="syncFromText('cagr-yr','cagr-yr-txt'); updateCAGR()"></div>
+            <input type="range" id="cagr-yr" min="1" max="40" step="1" value="10" oninput="syncFromRange('cagr-yr','cagr-yr-txt'); updateCAGR()">
+          </div>
+          <div class="result-box">
+            <div class="result-label">Your CAGR</div>
+            <div class="result-value" id="cagr-result">—</div>
+            <div class="result-breakdown">
+              <div class="bd-item"><div class="bd-label">Total Gain</div><div class="bd-val green" id="cagr-gain">—</div></div>
+              <div class="bd-item"><div class="bd-label">Growth</div><div class="bd-val green" id="cagr-growth">—</div></div>
+            </div>
+          
+            <div class="result-actions">
+              <button class="action-btn action-btn-dl" onclick="showDownload(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+                Download Report
+              </button>
+              <button class="action-btn action-btn-wa" onclick="talkExpert(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Talk to Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="animation-delay:0.00s">
+        <div class="card-top">
+          <div class="card-header">
+            <div class="card-icon-wrap">🏖️</div>
+            <div><div class="card-title">Retirement Corpus Calculator</div><div class="card-desc">Estimate how much you need to retire comfortably</div></div>
+          </div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-row"><span class="spec-icon">📌</span><span class="spec-text"><strong>What it does:</strong> Calculates corpus needed at retirement based on today's expenses and inflation</span></div>
+          <div class="spec-row"><span class="spec-icon">👤</span><span class="spec-text"><strong>Who uses it:</strong> Mid-career professionals and self-employed clients planning financial independence</span></div>
+          <div class="spec-row"><span class="spec-icon">🎯</span><span class="spec-text"><strong>What you get:</strong> Target retirement corpus and SIP to start investing today</span></div>
+        </div>
+        
+        <div class="how-to">
+          <button class="how-to-toggle" onclick="toggleHowTo(this)">
+            <span class="ht-arrow">▶</span> How to use this calculator
+          </button>
+          <div class="how-to-steps">
+            <ol>
+                <li><strong>Enter</strong> your current age and the age you want to retire</li>
+                <li><strong>Enter</strong> your total monthly household expenses today</li>
+                <li><strong>Set</strong> the assumed inflation rate (6% is the standard)</li>
+                <li><strong>See</strong> the corpus you need at retirement and the monthly SIP to start today</li>
+            </ol>
+          </div>
+        </div><hr class="calc-divider">
+        <div class="calc-body">
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Current Age</span><input class="input-editable" id="ret-age-txt" type="number" value="30" min="20" max="59" oninput="syncFromText('ret-age','ret-age-txt'); updateRetirement()"></div>
+            <input type="range" id="ret-age" min="20" max="59" step="1" value="30" oninput="syncFromRange('ret-age','ret-age-txt'); updateRetirement()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Retirement Age</span><input class="input-editable" id="ret-retire-txt" type="number" value="60" min="40" max="70" oninput="syncFromText('ret-retire','ret-retire-txt'); updateRetirement()"></div>
+            <input type="range" id="ret-retire" min="40" max="70" step="1" value="60" oninput="syncFromRange('ret-retire','ret-retire-txt'); updateRetirement()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Monthly Expenses Today</span><input class="input-editable" id="ret-exp-txt" type="number" value="40000" min="10000" max="300000" oninput="syncFromText('ret-exp','ret-exp-txt'); updateRetirement()"></div>
+            <input type="range" id="ret-exp" min="10000" max="300000" step="5000" value="40000" oninput="syncFromRange('ret-exp','ret-exp-txt'); updateRetirement()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Inflation Rate (%)</span><input class="input-editable" id="ret-inf-txt" type="number" value="6" min="3" max="12" step="0.5" oninput="syncFromText('ret-inf','ret-inf-txt'); updateRetirement()"></div>
+            <input type="range" id="ret-inf" min="3" max="12" step="0.5" value="6" oninput="syncFromRange('ret-inf','ret-inf-txt'); updateRetirement()">
+          </div>
+          <div class="result-box">
+            <div class="result-label">Corpus Needed at Retirement</div>
+            <div class="result-value" id="ret-result">—</div>
+            <div class="result-breakdown">
+              <div class="bd-item"><div class="bd-label">Monthly SIP Needed</div><div class="bd-val green" id="ret-sip">—</div></div>
+            </div>
+          
+            <div class="result-actions">
+              <button class="action-btn action-btn-dl" onclick="showDownload(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+                Download Report
+              </button>
+              <button class="action-btn action-btn-wa" onclick="talkExpert(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Talk to Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="animation-delay:0.06s">
+        <div class="card-top">
+          <div class="card-header">
+            <div class="card-icon-wrap">🎓</div>
+            <div><div class="card-title">Child Education Planner</div><div class="card-desc">Plan for future education costs and SIP needed</div></div>
+          </div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-row"><span class="spec-icon">📌</span><span class="spec-text"><strong>What it does:</strong> Estimates inflated future cost of education and SIP needed today</span></div>
+          <div class="spec-row"><span class="spec-icon">👤</span><span class="spec-text"><strong>Who uses it:</strong> Parents with newborns or school-going children planning for college</span></div>
+          <div class="spec-row"><span class="spec-icon">🎯</span><span class="spec-text"><strong>What you get:</strong> Inflated future cost and monthly SIP required to meet it</span></div>
+        </div>
+        
+        <div class="how-to">
+          <button class="how-to-toggle" onclick="toggleHowTo(this)">
+            <span class="ht-arrow">▶</span> How to use this calculator
+          </button>
+          <div class="how-to-steps">
+            <ol>
+                <li><strong>Enter</strong> your child's current age</li>
+                <li><strong>Set</strong> the age when education expenses will begin (e.g. 18 for college)</li>
+                <li><strong>Enter</strong> today's approximate cost of the education you have in mind</li>
+                <li><strong>Set</strong> education inflation rate (8% is standard in India)</li>
+                <li><strong>See</strong> the future cost and monthly SIP needed to fund it comfortably</li>
+            </ol>
+          </div>
+        </div><hr class="calc-divider">
+        <div class="calc-body">
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Child's Current Age</span><input class="input-editable" id="edu-age-txt" type="number" value="3" min="0" max="15" oninput="syncFromText('edu-age','edu-age-txt'); updateEdu()"></div>
+            <input type="range" id="edu-age" min="0" max="15" step="1" value="3" oninput="syncFromRange('edu-age','edu-age-txt'); updateEdu()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Education Goal Age</span><input class="input-editable" id="edu-goal-txt" type="number" value="18" min="10" max="25" oninput="syncFromText('edu-goal','edu-goal-txt'); updateEdu()"></div>
+            <input type="range" id="edu-goal" min="10" max="25" step="1" value="18" oninput="syncFromRange('edu-goal','edu-goal-txt'); updateEdu()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Current Education Cost</span><input class="input-editable" id="edu-cost-txt" type="number" value="1000000" min="100000" max="10000000" oninput="syncFromText('edu-cost','edu-cost-txt'); updateEdu()"></div>
+            <input type="range" id="edu-cost" min="100000" max="10000000" step="50000" value="1000000" oninput="syncFromRange('edu-cost','edu-cost-txt'); updateEdu()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Education Inflation (%)</span><input class="input-editable" id="edu-inf-txt" type="number" value="8" min="4" max="15" step="0.5" oninput="syncFromText('edu-inf','edu-inf-txt'); updateEdu()"></div>
+            <input type="range" id="edu-inf" min="4" max="15" step="0.5" value="8" oninput="syncFromRange('edu-inf','edu-inf-txt'); updateEdu()">
+          </div>
+          <div class="result-box">
+            <div class="result-label">Future Education Cost</div>
+            <div class="result-value" id="edu-result">—</div>
+            <div class="result-breakdown">
+              <div class="bd-item"><div class="bd-label">Monthly SIP Needed</div><div class="bd-val green" id="edu-sip">—</div></div>
+            </div>
+          
+            <div class="result-actions">
+              <button class="action-btn action-btn-dl" onclick="showDownload(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+                Download Report
+              </button>
+              <button class="action-btn action-btn-wa" onclick="talkExpert(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Talk to Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="animation-delay:0.12s">
+        <div class="card-top">
+          <div class="card-header">
+            <div class="card-icon-wrap">🏛️</div>
+            <div><div class="card-title">PPF Calculator</div><div class="card-desc">Find out how much your PPF savings grow — completely tax-free</div></div>
+          </div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-row"><span class="spec-icon">📌</span><span class="spec-text"><strong>What it does:</strong> Calculates PPF maturity with annual compounding — EEE tax-free benefit</span></div>
+          <div class="spec-row"><span class="spec-icon">👤</span><span class="spec-text"><strong>Who uses it:</strong> Long-term tax savers and salaried individuals in higher tax brackets</span></div>
+          <div class="spec-row"><span class="spec-icon">🎯</span><span class="spec-text"><strong>What you get:</strong> Tax-free maturity, total invested, and interest earned — all 100% yours</span></div>
+        </div>
+        
+        <div class="how-to">
+          <button class="how-to-toggle" onclick="toggleHowTo(this)">
+            <span class="ht-arrow">▶</span> How to use this calculator
+          </button>
+          <div class="how-to-steps">
+            <ol>
+                <li><strong>Enter</strong> how much you invest in PPF every year (max ₹1.5L)</li>
+                <li><strong>Set</strong> the current PPF interest rate (7.1% as of 2024)</li>
+                <li><strong>Choose</strong> tenure — minimum 15 years, extendable in 5-year blocks</li>
+                <li><strong>See</strong> your completely tax-free maturity amount under EEE status</li>
+            </ol>
+          </div>
+        </div><hr class="calc-divider">
+        <div class="calc-body">
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Yearly Investment</span><input class="input-editable" id="ppf-amt-txt" type="number" value="150000" min="500" max="150000" oninput="syncFromText('ppf-amt','ppf-amt-txt'); updatePPF()"></div>
+            <input type="range" id="ppf-amt" min="500" max="150000" step="500" value="150000" oninput="syncFromRange('ppf-amt','ppf-amt-txt'); updatePPF()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">PPF Rate (%)</span><input class="input-editable" id="ppf-rate-txt" type="number" value="7.1" min="6" max="9" step="0.1" oninput="syncFromText('ppf-rate','ppf-rate-txt'); updatePPF()"></div>
+            <input type="range" id="ppf-rate" min="6" max="9" step="0.1" value="7.1" oninput="syncFromRange('ppf-rate','ppf-rate-txt'); updatePPF()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Tenure (min 15 yrs)</span><input class="input-editable" id="ppf-yr-txt" type="number" value="15" min="15" max="50" oninput="syncFromText('ppf-yr','ppf-yr-txt'); updatePPF()"></div>
+            <input type="range" id="ppf-yr" min="15" max="50" step="5" value="15" oninput="syncFromRange('ppf-yr','ppf-yr-txt'); updatePPF()">
+          </div>
+          <div class="result-box">
+            <div class="result-label">PPF Maturity (Tax-Free)</div>
+            <div class="result-value" id="ppf-result">—</div>
+            <div class="result-breakdown">
+              <div class="bd-item"><div class="bd-label">Total Invested</div><div class="bd-val blue" id="ppf-invested">—</div></div>
+              <div class="bd-item"><div class="bd-label">Tax-Free Interest</div><div class="bd-val green" id="ppf-interest">—</div></div>
+            </div>
+          
+            <div class="result-actions">
+              <button class="action-btn action-btn-dl" onclick="showDownload(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+                Download Report
+              </button>
+              <button class="action-btn action-btn-wa" onclick="talkExpert(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Talk to Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="animation-delay:0.24s">
+        <div class="card-top">
+          <div class="card-header">
+            <div class="card-icon-wrap">📊</div>
+            <div><div class="card-title">Inflation Adjusted Return</div><div class="card-desc">Find your real returns after accounting for inflation</div></div>
+          </div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-row"><span class="spec-icon">📌</span><span class="spec-text"><strong>What it does:</strong> Uses the Fisher Equation to show your real purchasing power gain after inflation</span></div>
+          <div class="spec-row"><span class="spec-icon">👤</span><span class="spec-text"><strong>Who uses it:</strong> All investors comparing real vs nominal growth across equity, gold, FD</span></div>
+          <div class="spec-row"><span class="spec-icon">🎯</span><span class="spec-text"><strong>What you get:</strong> Real rate of return and nominal vs inflation-adjusted value over 10 years</span></div>
+        </div>
+        
+        <div class="how-to">
+          <button class="how-to-toggle" onclick="toggleHowTo(this)">
+            <span class="ht-arrow">▶</span> How to use this calculator
+          </button>
+          <div class="how-to-steps">
+            <ol>
+                <li><strong>Enter</strong> your investment's nominal return rate (e.g. 12% for equity MF)</li>
+                <li><strong>Set</strong> the current inflation rate in India (6% is standard)</li>
+                <li><strong>Enter</strong> your investment amount</li>
+                <li><strong>See</strong> your real return rate and true purchasing power gain over 10 years</li>
+            </ol>
+          </div>
+        </div><hr class="calc-divider">
+        <div class="calc-body">
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Nominal Return (p.a.)</span><input class="input-editable" id="inf-nominal-txt" type="number" value="12" min="1" max="30" step="0.5" oninput="syncFromText('inf-nominal','inf-nominal-txt'); updateInflation()"></div>
+            <input type="range" id="inf-nominal" min="1" max="30" step="0.5" value="12" oninput="syncFromRange('inf-nominal','inf-nominal-txt'); updateInflation()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Inflation Rate (%)</span><input class="input-editable" id="inf-rate-txt" type="number" value="6" min="1" max="15" step="0.5" oninput="syncFromText('inf-rate','inf-rate-txt'); updateInflation()"></div>
+            <input type="range" id="inf-rate" min="1" max="15" step="0.5" value="6" oninput="syncFromRange('inf-rate','inf-rate-txt'); updateInflation()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Investment Amount</span><input class="input-editable" id="inf-amt-txt" type="number" value="100000" min="1000" max="5000000" oninput="syncFromText('inf-amt','inf-amt-txt'); updateInflation()"></div>
+            <input type="range" id="inf-amt" min="1000" max="5000000" step="1000" value="100000" oninput="syncFromRange('inf-amt','inf-amt-txt'); updateInflation()">
+          </div>
+          <div class="result-box">
+            <div class="result-label">Real Rate of Return</div>
+            <div class="result-value" id="inf-result">—</div>
+            <div class="result-breakdown">
+              <div class="bd-item"><div class="bd-label">Nominal Value (10yr)</div><div class="bd-val green" id="inf-nominal-val2">—</div></div>
+              <div class="bd-item"><div class="bd-label">Real Value (10yr)</div><div class="bd-val blue" id="inf-real-val">—</div></div>
+            </div>
+          
+            <div class="result-actions">
+              <button class="action-btn action-btn-dl" onclick="showDownload(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+                Download Report
+              </button>
+              <button class="action-btn action-btn-wa" onclick="talkExpert(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Talk to Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ── LOANS & INSURANCE ── -->
+<div class="section" id="sec-loan" data-cat="loan">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">🏠 Loans & Insurance</div>
+      <h2 style="font-size:clamp(1.1rem,2vw,1.35rem);font-weight:700;color:var(--ink);margin:0.5rem 0 0.25rem;line-height:1.3;">EMI, Loan Prepayment & Insurance Calculators</h2>
+      <p class="section-subtitle">EMIs, prepayment vs investing, life cover and health protection planning</p>
+    </div>
+    <div class="tools-grid">
+      <div class="card" style="animation-delay:0.00s">
+        <div class="card-top">
+          <div class="card-header">
+            <div class="card-icon-wrap">🏦</div>
+            <div><div class="card-title">EMI Calculator</div><div class="card-desc">Calculate your loan EMI, total interest, and repayment</div></div>
+          </div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-row"><span class="spec-icon">📌</span><span class="spec-text"><strong>What it does:</strong> Calculates monthly EMI, total interest payable, and total repayment for any loan</span></div>
+          <div class="spec-row"><span class="spec-icon">👤</span><span class="spec-text"><strong>Who uses it:</strong> Anyone taking a home loan, car loan, or personal loan</span></div>
+          <div class="spec-row"><span class="spec-icon">🎯</span><span class="spec-text"><strong>What you get:</strong> Monthly EMI, total interest, and principal vs interest breakdown</span></div>
+        </div>
+        
+        <div class="how-to">
+          <button class="how-to-toggle" onclick="toggleHowTo(this)">
+            <span class="ht-arrow">▶</span> How to use this calculator
+          </button>
+          <div class="how-to-steps">
+            <ol>
+                <li><strong>Enter</strong> the loan amount you want to borrow</li>
+                <li><strong>Set</strong> the interest rate offered by your bank or lender</li>
+                <li><strong>Choose</strong> the loan tenure in years</li>
+                <li><strong>See</strong> your monthly EMI, total interest paid, and principal breakdown</li>
+            </ol>
+          </div>
+        </div><hr class="calc-divider">
+        <div class="calc-body">
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Loan Amount</span><input class="input-editable" id="emi-amt-txt" type="number" value="2000000" min="10000" max="10000000" oninput="syncFromText('emi-amt','emi-amt-txt'); updateEMI()"></div>
+            <input type="range" id="emi-amt" min="10000" max="10000000" step="10000" value="2000000" oninput="syncFromRange('emi-amt','emi-amt-txt'); updateEMI()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Interest Rate (p.a.)</span><input class="input-editable" id="emi-rate-txt" type="number" value="8.5" min="5" max="24" step="0.1" oninput="syncFromText('emi-rate','emi-rate-txt'); updateEMI()"></div>
+            <input type="range" id="emi-rate" min="5" max="24" step="0.1" value="8.5" oninput="syncFromRange('emi-rate','emi-rate-txt'); updateEMI()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Loan Tenure (years)</span><input class="input-editable" id="emi-yr-txt" type="number" value="20" min="1" max="30" oninput="syncFromText('emi-yr','emi-yr-txt'); updateEMI()"></div>
+            <input type="range" id="emi-yr" min="1" max="30" step="1" value="20" oninput="syncFromRange('emi-yr','emi-yr-txt'); updateEMI()">
+          </div>
+          <div class="result-box">
+            <div class="result-label">Monthly EMI</div>
+            <div class="result-value" id="emi-result">—</div>
+            <div class="result-breakdown">
+              <div class="bd-item"><div class="bd-label">Principal</div><div class="bd-val blue" id="emi-principal">—</div></div>
+              <div class="bd-item"><div class="bd-label">Total Interest</div><div class="bd-val green" id="emi-interest">—</div></div>
+            </div>
+            <div class="mini-chart" id="emi-chart"></div>
+          
+            <div class="result-actions">
+              <button class="action-btn action-btn-dl" onclick="showDownload(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+                Download Report
+              </button>
+              <button class="action-btn action-btn-wa" onclick="talkExpert(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Talk to Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="animation-delay:0.12s">
+        <div class="card-top">
+          <div class="card-header">
+            <div class="card-icon-wrap">🛡️</div>
+            <div><div class="card-title">Term Insurance Coverage</div><div class="card-desc">Calculate exactly how much life cover your family actually needs</div></div>
+          </div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-row"><span class="spec-icon">📌</span><span class="spec-text"><strong>What it does:</strong> Uses Human Life Value method to calculate ideal term insurance cover based on income, age, and liabilities</span></div>
+          <div class="spec-row"><span class="spec-icon">👤</span><span class="spec-text"><strong>Who uses it:</strong> Anyone with dependents — breadwinners, married couples, parents, and business owners</span></div>
+          <div class="spec-row"><span class="spec-icon">🎯</span><span class="spec-text"><strong>What you get:</strong> Minimum recommended life cover so your family is financially protected if something happens to you</span></div>
+        </div>
+        
+        <div class="how-to">
+          <button class="how-to-toggle" onclick="toggleHowTo(this)">
+            <span class="ht-arrow">▶</span> How to use this calculator
+          </button>
+          <div class="how-to-steps">
+            <ol>
+                <li><strong>Enter</strong> your annual income (salary or business income)</li>
+                <li><strong>Enter</strong> your current age</li>
+                <li><strong>Enter</strong> total outstanding loans (home loan, car loan, etc.)</li>
+                <li><strong>Enter</strong> number of people who depend on your income</li>
+                <li><strong>See</strong> the minimum life cover your family needs if something happens to you</li>
+            </ol>
+          </div>
+        </div><hr class="calc-divider">
+        <div class="calc-body">
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Annual Income</span><input class="input-editable" id="term-income-txt" type="number" value="1200000" min="100000" max="20000000" oninput="syncFromText('term-income','term-income-txt'); updateTerm()"></div>
+            <input type="range" id="term-income" min="100000" max="20000000" step="50000" value="1200000" oninput="syncFromRange('term-income','term-income-txt'); updateTerm()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Current Age</span><input class="input-editable" id="term-age-txt" type="number" value="30" min="18" max="60" oninput="syncFromText('term-age','term-age-txt'); updateTerm()"></div>
+            <input type="range" id="term-age" min="18" max="60" step="1" value="30" oninput="syncFromRange('term-age','term-age-txt'); updateTerm()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Outstanding Loans</span><input class="input-editable" id="term-loan-txt" type="number" value="2000000" min="0" max="20000000" oninput="syncFromText('term-loan','term-loan-txt'); updateTerm()"></div>
+            <input type="range" id="term-loan" min="0" max="20000000" step="100000" value="2000000" oninput="syncFromRange('term-loan','term-loan-txt'); updateTerm()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Number of Dependents</span><input class="input-editable" id="term-dep-txt" type="number" value="3" min="1" max="10" oninput="syncFromText('term-dep','term-dep-txt'); updateTerm()"></div>
+            <input type="range" id="term-dep" min="1" max="10" step="1" value="3" oninput="syncFromRange('term-dep','term-dep-txt'); updateTerm()">
+          </div>
+          <div class="result-box">
+            <div class="result-label">Minimum Cover Recommended</div>
+            <div class="result-value" id="term-result">—</div>
+            <div class="result-breakdown">
+              <div class="bd-item"><div class="bd-label">Income Replacement</div><div class="bd-val blue" id="term-income-rep">—</div></div>
+              <div class="bd-item"><div class="bd-label">Loans Covered</div><div class="bd-val green" id="term-loan-cover">—</div></div>
+            </div>
+          
+            <div class="result-actions">
+              <button class="action-btn action-btn-dl" onclick="showDownload(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+                Download Report
+              </button>
+              <button class="action-btn action-btn-wa" onclick="talkExpert(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Talk to Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="animation-delay:0.18s">
+        <div class="card-top">
+          <div class="card-header">
+            <div class="card-icon-wrap">🏥</div>
+            <div><div class="card-title">Health Insurance Cover</div><div class="card-desc">Find out how much health insurance cover your family actually needs</div></div>
+          </div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-row"><span class="spec-icon">📌</span><span class="spec-text"><strong>What it does:</strong> Estimates adequate health insurance based on your city, family size, age, and rising medical inflation</span></div>
+          <div class="spec-row"><span class="spec-icon">👤</span><span class="spec-text"><strong>Who uses it:</strong> Families and individuals reviewing their existing cover or buying health insurance for the first time</span></div>
+          <div class="spec-row"><span class="spec-icon">🎯</span><span class="spec-text"><strong>What you get:</strong> Minimum recommended health cover and estimated annual premium range for your profile</span></div>
+        </div>
+        
+        <div class="how-to">
+          <button class="how-to-toggle" onclick="toggleHowTo(this)">
+            <span class="ht-arrow">▶</span> How to use this calculator
+          </button>
+          <div class="how-to-steps">
+            <ol>
+                <li><strong>Select</strong> your city from the dropdown — tier is auto-detected</li>
+                <li><strong>Enter</strong> your age and total number of family members to insure</li>
+                <li><strong>Enter</strong> any existing health cover you already have</li>
+                <li><strong>See</strong> recommended cover, the gap in your current policy, and estimated annual premium</li>
+            </ol>
+          </div>
+        </div><hr class="calc-divider">
+        <div class="calc-body">
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Your Age</span><input class="input-editable" id="hi-age-txt" type="number" value="35" min="18" max="70" oninput="syncFromText('hi-age','hi-age-txt'); updateHealthIns()"></div>
+            <input type="range" id="hi-age" min="18" max="70" step="1" value="35" oninput="syncFromRange('hi-age','hi-age-txt'); updateHealthIns()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Family Members to Cover</span><input class="input-editable" id="hi-members-txt" type="number" value="4" min="1" max="10" oninput="syncFromText('hi-members','hi-members-txt'); updateHealthIns()"></div>
+            <input type="range" id="hi-members" min="1" max="10" step="1" value="4" oninput="syncFromRange('hi-members','hi-members-txt'); updateHealthIns()">
+          </div>
+          <div class="input-group">
+            <div class="input-top">
+              <span class="input-name">Your City <span class="city-tier-badge" id="hi-tier-badge">Tier 2</span></span>
+            </div>
+            <select class="city-select" id="hi-city" onchange="updateHealthIns()">
+              <optgroup label="Metro Cities (Tier 1)">
+                <option value="1">Mumbai</option>
+                <option value="1">Delhi / NCR</option>
+                <option value="1">Bengaluru</option>
+                <option value="1">Chennai</option>
+                <option value="1">Hyderabad</option>
+                <option value="1">Kolkata</option>
+                <option value="1">Pune</option>
+                <option value="1">Ahmedabad</option>
+              </optgroup>
+              <optgroup label="Tier 2 Cities">
+                <option value="2" selected>Ludhiana</option>
+                <option value="2">Amritsar</option>
+                <option value="2">Chandigarh</option>
+                <option value="2">Jaipur</option>
+                <option value="2">Lucknow</option>
+                <option value="2">Kanpur</option>
+                <option value="2">Nagpur</option>
+                <option value="2">Indore</option>
+                <option value="2">Bhopal</option>
+                <option value="2">Surat</option>
+                <option value="2">Vadodara</option>
+                <option value="2">Coimbatore</option>
+                <option value="2">Kochi</option>
+                <option value="2">Visakhapatnam</option>
+                <option value="2">Patna</option>
+                <option value="2">Bhubaneswar</option>
+                <option value="2">Dehradun</option>
+                <option value="2">Jalandhar</option>
+              </optgroup>
+              <optgroup label="Tier 3 Cities &amp; Towns">
+                <option value="3">Patiala</option>
+                <option value="3">Bathinda</option>
+                <option value="3">Ambala</option>
+                <option value="3">Rohtak</option>
+                <option value="3">Hisar</option>
+                <option value="3">Meerut</option>
+                <option value="3">Agra</option>
+                <option value="3">Varanasi</option>
+                <option value="3">Jodhpur</option>
+                <option value="3">Udaipur</option>
+                <option value="3">Other Town</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Existing Cover (if any)</span><input class="input-editable" id="hi-existing-txt" type="number" value="300000" min="0" max="5000000" oninput="syncFromText('hi-existing','hi-existing-txt'); updateHealthIns()"></div>
+            <input type="range" id="hi-existing" min="0" max="5000000" step="100000" value="300000" oninput="syncFromRange('hi-existing','hi-existing-txt'); updateHealthIns()">
+          </div>
+          <div class="result-box">
+            <div class="result-label">Recommended Cover</div>
+            <div class="result-value" id="hi-result">—</div>
+            <div class="result-breakdown">
+              <div class="bd-item"><div class="bd-label">Additional Cover Needed</div><div class="bd-val blue" id="hi-gap">—</div></div>
+              <div class="bd-item"><div class="bd-label">Est. Annual Premium</div><div class="bd-val green" id="hi-premium">—</div></div>
+            </div>
+          
+            <div class="result-actions">
+              <button class="action-btn action-btn-dl" onclick="showDownload(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+                Download Report
+              </button>
+              <button class="action-btn action-btn-wa" onclick="talkExpert(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Talk to Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Disclaimer -->
+<div class="card" style="animation-delay:0.42s">
+        <div class="card-top">
+          <div class="card-header">
+            <div class="card-icon-wrap">📐</div>
+            <div><div class="card-title">IRR Calculator</div><div class="card-desc">Find the true annualised return on any investment with irregular cash flows</div></div>
+          </div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-row"><span class="spec-icon">📌</span><span class="spec-text"><strong>What it does:</strong> Calculates Internal Rate of Return — the actual % return earned on uneven investments or redemptions over time</span></div>
+          <div class="spec-row"><span class="spec-icon">👤</span><span class="spec-text"><strong>Who uses it:</strong> Investors with multiple SIP instalments, partial withdrawals, or lumpsum + SIP combinations</span></div>
+          <div class="spec-row"><span class="spec-icon">🎯</span><span class="spec-text"><strong>What you get:</strong> True annualised return (XIRR-style) so you can compare any investment fairly</span></div>
+        </div>
+        
+        <div class="how-to">
+          <button class="how-to-toggle" onclick="toggleHowTo(this)">
+            <span class="ht-arrow">▶</span> How to use this calculator
+          </button>
+          <div class="how-to-steps">
+            <ol>
+                <li><strong>Enter</strong> the total amount you invested initially</li>
+                <li><strong>Enter</strong> the current market value of your portfolio today</li>
+                <li><strong>Set</strong> how many years ago you started investing</li>
+                <li><strong>Add</strong> any monthly SIP contribution if applicable</li>
+                <li><strong>See</strong> your true annualised IRR — your real return on every rupee</li>
+            </ol>
+          </div>
+        </div><hr class="calc-divider">
+        <div class="calc-body">
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Total Amount Invested</span><input class="input-editable" id="irr-invested-txt" type="number" value="600000" min="1000" max="50000000" oninput="syncFromText('irr-invested','irr-invested-txt'); updateIRR()"></div>
+            <input type="range" id="irr-invested" min="1000" max="50000000" step="1000" value="600000" oninput="syncFromRange('irr-invested','irr-invested-txt'); updateIRR()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Current Portfolio Value</span><input class="input-editable" id="irr-current-txt" type="number" value="1100000" min="1000" max="100000000" oninput="syncFromText('irr-current','irr-current-txt'); updateIRR()"></div>
+            <input type="range" id="irr-current" min="1000" max="100000000" step="1000" value="1100000" oninput="syncFromRange('irr-current','irr-current-txt'); updateIRR()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Investment Duration (years)</span><input class="input-editable" id="irr-yr-txt" type="number" value="5" min="1" max="40" oninput="syncFromText('irr-yr','irr-yr-txt'); updateIRR()"></div>
+            <input type="range" id="irr-yr" min="1" max="40" step="1" value="5" oninput="syncFromRange('irr-yr','irr-yr-txt'); updateIRR()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Monthly Contribution</span><input class="input-editable" id="irr-monthly-txt" type="number" value="10000" min="0" max="500000" oninput="syncFromText('irr-monthly','irr-monthly-txt'); updateIRR()"></div>
+            <input type="range" id="irr-monthly" min="0" max="500000" step="500" value="10000" oninput="syncFromRange('irr-monthly','irr-monthly-txt'); updateIRR()">
+          </div>
+          <div class="result-box">
+            <div class="result-label">Your IRR (Annualised Return)</div>
+            <div class="result-value" id="irr-result">—</div>
+            <div class="result-breakdown">
+              <div class="bd-item"><div class="bd-label">Total Invested</div><div class="bd-val blue" id="irr-total-inv">—</div></div>
+              <div class="bd-item"><div class="bd-label">Total Gain</div><div class="bd-val green" id="irr-gain">—</div></div>
+            </div>
+          
+            <div class="result-actions">
+              <button class="action-btn action-btn-dl" onclick="showDownload(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+                Download Report
+              </button>
+              <button class="action-btn action-btn-wa" onclick="talkExpert(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Talk to Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<div class="card" data-cat="returns">
+        <div class="card-top">
+          <div class="card-header">
+            <div class="card-icon-wrap">📊</div>
+            <div><div class="card-title">XIRR Calculator</div><div class="card-desc">Calculate annualised return on investments made at irregular intervals (SIPs, top-ups)</div></div>
+          </div>
+        </div>
+        <div class="calc-body">
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Total Invested (₹)</span><input class="input-editable" id="xirr-invested-txt" type="number" value="120000" min="1000" max="50000000" oninput="syncFromText('xirr-invested','xirr-invested-txt');updateXIRR()"></div>
+            <input type="range" id="xirr-invested" min="1000" max="50000000" step="1000" value="120000" oninput="syncFromRange('xirr-invested','xirr-invested-txt');updateXIRR()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Current Value (₹)</span><input class="input-editable" id="xirr-current-txt" type="number" value="200000" min="1000" max="100000000" oninput="syncFromText('xirr-current','xirr-current-txt');updateXIRR()"></div>
+            <input type="range" id="xirr-current" min="1000" max="100000000" step="1000" value="200000" oninput="syncFromRange('xirr-current','xirr-current-txt');updateXIRR()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Investment Duration (years)</span><input class="input-editable" id="xirr-yr-txt" type="number" value="3" min="1" max="40" oninput="syncFromText('xirr-yr','xirr-yr-txt');updateXIRR()"></div>
+            <input type="range" id="xirr-yr" min="1" max="40" step="1" value="3" oninput="syncFromRange('xirr-yr','xirr-yr-txt');updateXIRR()">
+          </div>
+          <div class="input-group">
+            <div class="input-top"><span class="input-name">Monthly SIP Amount (₹)</span><input class="input-editable" id="xirr-sip-txt" type="number" value="10000" min="0" max="1000000" oninput="syncFromText('xirr-sip','xirr-sip-txt');updateXIRR()"></div>
+            <input type="range" id="xirr-sip" min="0" max="1000000" step="500" value="10000" oninput="syncFromRange('xirr-sip','xirr-sip-txt');updateXIRR()">
+          </div>
+          <div class="result-box">
+            <div class="result-label">XIRR (Annualised Return)</div>
+            <div class="result-value" id="xirr-result">—</div>
+            <div class="result-breakdown">
+              <div class="bd-item"><div class="bd-label">Total Invested</div><div class="bd-val" id="xirr-inv-show">—</div></div>
+              <div class="bd-item"><div class="bd-label">Gain</div><div class="bd-val" id="xirr-gain">—</div></div>
+              <div class="bd-item"><div class="bd-label">vs FD (7%)</div><div class="bd-val" id="xirr-vs-fd">—</div></div>
+            </div>
+            <div class="result-actions">
+              <button class="action-btn action-btn-dl" onclick="showDownload(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+                Download Report
+              </button>
+              <button class="action-btn action-btn-wa" onclick="talkExpert(this)">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Talk to Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="disclaimer-section">
+    <div class="disclaimer-box">
+        <h4>⚠️ Important Disclaimer</h4>
+        <p>These tools are for informational and educational purposes only. They give a general idea of potential returns based on user inputs.</p>
+        <ul>
+            <li>They do not guarantee or predict actual investment performance.</li>
+            <li>Results may vary based on market conditions, interest rates, inflation, taxation, and individual factors.</li>
+            <li>We strongly recommend reviewing your plan with a SEBI-registered Investment Adviser (RIA) before any financial decision.</li>
+        </ul>
+        <div style="margin-top:1.25rem;display:flex;align-items:center;flex-wrap:wrap;gap:1rem;padding-top:1rem;border-top:1px solid var(--accent-border);">
+            <div>
+                <p style="font-size:0.85rem;font-weight:600;color:#92400e;margin-bottom:0.2rem;">Want a personalised plan based on your numbers?</p>
+                <p style="font-size:0.78rem;color:#a16207;">Finaura™ (AMFI/NSE/BSE/IRDAI registered) — speak directly with Finaura™</p>
+            </div>
+            <button onclick="talkExpert(null)" style="flex-shrink:0;display:flex;align-items:center;gap:0.5rem;background:#25d366;color:white;border:none;border-radius:0.5rem;padding:0.65rem 1.25rem;font-size:0.82rem;font-weight:600;cursor:pointer;font-family:inherit;transition:all 0.2s;white-space:nowrap;" onmouseover="this.style.background='#20b858';this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#25d366';this.style.transform=''">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Talk to Finaura Expert
+            </button>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- CTA STRIP -->
+<section class="cta-strip">
+    <div class="container">
+        <h2>Numbers Make Sense. Now Let's Build a Plan.</h2>
+        <p>A calculator shows you what's possible. A plan makes it happen.</p>
+        <div class="cta-btns">
+            <button class="btn btn-gold" onclick="bookSession()">Book a Consult &nbsp;→</button>
+            <a href="services.html" class="btn btn-ghost">View Our Services</a>
+        </div>
+        <p class="cta-note">AMFI-registered Mutual Fund Distributor &nbsp;·&nbsp; ARN293004 &nbsp;·&nbsp; Ludhiana, Punjab</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <span class="logo-mark" style="color:white">Finaura<span>™</span></span>
+                    <span class="logo-sub">Investment Solution</span>
+                </a>
+                <p>Goal-based mutual fund investments for disciplined, long-term wealth building — serving Indian families with honesty, clarity and care.</p>
+                <div class="footer-reg">
+                    <span>AMFI · ARN293004</span>
+                    <span>BSE Star MF</span>
+                    <span>NSE Invest</span>
+                    <span>IRDAI</span>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About Us</a>
+                <a href="tools.html">Free Calculators</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="tel:+918146509068">+91 81465 09068</a>
+                <a href="mailto:finauraindia@gmail.com">finauraindia@gmail.com</a>
+                <a href="https://wa.me/918146509068" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <a href="https://calendar.app.google/MWmNEEbRpCMh1hxi7" target="_blank" rel="noopener noreferrer">Book a Consult</a>
+            </div>
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/finauraindia" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg><span>Instagram</span></a>
+                    <a href="https://www.youtube.com/@FinauraIndia" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg><span>YouTube</span></a>
+                    <a href="https://www.threads.net/@finauraindia" target="_blank" rel="noopener" aria-label="Threads" class="social-icon-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.36-.892h-.048c-.832 0-1.836.236-2.407 1.396l-1.86-.964c.808-1.564 2.378-2.429 4.271-2.429h.064c2.849.02 4.575 1.831 4.526 4.83l.013.582c.193.098.383.2.567.311 1.286.754 2.147 1.796 2.56 3.063.645 1.975.35 4.695-1.957 6.96-1.817 1.783-4.056 2.613-7.213 2.636z"/></svg><span>Threads</span></a>
+                    <a href="https://www.linkedin.com/in/akash-sood-7428a5263" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg><span>LinkedIn</span></a>
+                    <a href="https://whatsapp.com/channel/0029VaOlKOZ5Ui2YdHQAw22I" target="_blank" rel="noopener" aria-label="WhatsApp Channel" class="social-icon-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span>WA Channel</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © <span id="yr"></span> <em>Finaura™</em> Investment Solution &nbsp;·&nbsp; Ludhiana, Punjab, India
+        </div>
+    </div>
+    <div class="legal-strip">
+        <strong>AMFI-registered Mutual Fund Distributor | ARN293004</strong> 
+        Mutual Fund investments are subject to market risks. Read all scheme related documents carefully before investing. 
+        Investor Grievances: <a href="mailto:finauraindia@gmail.com">finauraindia@gmail.com</a> &nbsp;·&nbsp;
+        SEBI SCORES: <a href="https://scores.sebi.gov.in" target="_blank" rel="noopener">scores.sebi.gov.in</a> &nbsp;·&nbsp;
+        Toll-free: 1800-266-7575 &nbsp;·&nbsp;
+        ODR: <a href="https://smartodr.in" target="_blank" rel="noopener">smartodr.in</a> 
+        Finaura Investment Solution acts as a Mutual Fund Distributor and not as an Investment Adviser under SEBI (IA) Regulations, 2013. &nbsp;·&nbsp;
+        Data privacy governed under DPDP Act 2023 — <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+</footer>
+
+
+<div class="dl-overlay" id="dlOverlay" onclick="if(event.target===this)closeDownload()">
+  <div class="dl-modal" id="dlModal">
+    <!-- ── STEP 1: Lead Capture ── -->
+    <div id="dl-step1">
+      <div class="dl-header">
+        <div class="dl-logo">Finaura<span>™</span></div>
+        <div class="dl-logo-sub">Investment Solution · Ludhiana, Punjab</div>
+      </div>
+      <div class="dl-body">
+        <div style="text-align:center;margin-bottom:1.5rem;">
+          <div id="dl-step1-emoji" style="font-size:2rem;margin-bottom:.5rem;"></div>
+          <div style="font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold,#b8922a);margin-bottom:.35rem;">Your Result is Ready</div>
+          <div id="dl-step1-calcname" style="font-size:1.05rem;font-weight:700;color:var(--ink);"></div>
+          <div id="dl-step1-result" style="font-size:2rem;font-weight:700;color:var(--gold,#b8922a);margin:.35rem 0 0;line-height:1.1;"></div>
+        </div>
+        <p style="font-size:.82rem;color:var(--ink-muted,#666);text-align:center;margin:0 0 1.25rem;line-height:1.6;">Share a few details to get your personalised report — takes 5 seconds.</p>
+
+        <div style="display:flex;flex-direction:column;gap:.75rem;">
+          <div>
+            <label style="font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);display:block;margin-bottom:.35rem;">Full Name *</label>
+            <input id="lead-name" type="text" placeholder="e.g. Priya Sharma" autocomplete="name"
+              style="width:100%;padding:.7rem .9rem;border:1.5px solid var(--border,#e0d9ce);border-radius:.25rem;font-size:.88rem;font-family:inherit;background:#fff;box-sizing:border-box;outline:none;transition:border-color .2s;"
+              onfocus="this.style.borderColor='var(--gold,#b8922a)'" onblur="this.style.borderColor='var(--border,#e0d9ce)'">
+          </div>
+          <div>
+            <label style="font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);display:block;margin-bottom:.35rem;">Mobile Number *</label>
+            <input id="lead-mobile" type="tel" placeholder="e.g. 98765 43210" autocomplete="tel" maxlength="10" inputmode="numeric"
+              style="width:100%;padding:.7rem .9rem;border:1.5px solid var(--border,#e0d9ce);border-radius:.25rem;font-size:.88rem;font-family:inherit;background:#fff;box-sizing:border-box;outline:none;transition:border-color .2s;"
+              onfocus="this.style.borderColor='var(--gold,#b8922a)'" onblur="this.style.borderColor='var(--border,#e0d9ce)'">
+          </div>
+          <div>
+            <label style="font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);display:block;margin-bottom:.35rem;">Email Address <span style="font-weight:400;opacity:.6">(optional)</span></label>
+            <input id="lead-email" type="email" placeholder="e.g. priya@gmail.com" autocomplete="email"
+              style="width:100%;padding:.7rem .9rem;border:1.5px solid var(--border,#e0d9ce);border-radius:.25rem;font-size:.88rem;font-family:inherit;background:#fff;box-sizing:border-box;outline:none;transition:border-color .2s;"
+              onfocus="this.style.borderColor='var(--gold,#b8922a)'" onblur="this.style.borderColor='var(--border,#e0d9ce)'">
+          </div>
+          <div id="lead-error" style="display:none;color:#dc2626;font-size:.78rem;font-weight:600;text-align:center;padding:.5rem;background:#fef2f2;border-radius:.25rem;border:1px solid #fecaca;"></div>
+        </div>
+
+        <div style="margin-top:1.25rem;display:flex;gap:.75rem;">
+          <button onclick="submitLead()" 
+            style="flex:1;background:var(--gold,#b8922a);color:#fff;border:none;padding:.875rem;border-radius:.25rem;font-size:.85rem;font-weight:700;letter-spacing:.05em;cursor:pointer;font-family:inherit;transition:opacity .2s;"
+            onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">
+            Get My Report →
+          </button>
+          <button onclick="closeDownload()"
+            style="padding:.875rem 1.1rem;background:transparent;border:1.5px solid var(--border,#e0d9ce);border-radius:.25rem;font-size:.82rem;color:var(--ink-muted,#666);cursor:pointer;font-family:inherit;">
+            Cancel
+          </button>
+        </div>
+        <p style="font-size:.68rem;color:var(--ink-faint,#aaa);text-align:center;margin:.75rem 0 0;line-height:1.5;">
+          🔒 Your details are confidential. We don't share or sell your data.<br>By continuing, you agree to our <a href="privacy-policy.html" style="color:var(--gold,#b8922a);text-decoration:none;">Privacy Policy</a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- ── STEP 2: Result + Download ── -->
+    <div id="dl-step2" style="display:none;">
+      <div class="dl-header">
+        <div class="dl-logo">Finaura<span>™</span></div>
+        <div class="dl-logo-sub">Investment Solution · Ludhiana, Punjab</div>
+      </div>
+      <div class="dl-body">
+        <div class="dl-calc-name" id="dl-calc-name"></div>
+        <div class="dl-congrats">
+          <div class="dl-congrats-emoji"></div>
+          <div class="dl-congrats-title"></div>
+          <div class="dl-congrats-msg"></div>
+        </div>
+        <div style="text-align:center;margin-bottom:1rem;">
+          <div style="font-size:.72rem;color:var(--secondary,#888);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.35rem;">Your Result</div>
+          <div id="dl-main-result" style="font-size:2.25rem;font-weight:700;color:var(--accent,#b8922a);line-height:1.1;"></div>
+        </div>
+        <div class="dl-results"></div>
+        <div class="dl-next">
+          <div class="dl-next-title">⚡ Your Recommended Next Step</div>
+          <div class="dl-next-text">These numbers are a starting point. A personalised plan from Finaura™ accounts for your tax situation, risk profile, existing investments, and real-life goals — turning this calculation into a concrete action plan.</div>
+        </div>
+        <div class="dl-actions">
+          <button class="dl-btn dl-btn-print" onclick="printResult()">🖨️ Save as PDF</button>
+          <button class="dl-btn dl-btn-close" onclick="closeDownload()">Close</button>
+        </div>
+      </div>
+      <div class="dl-footer">
+        📞 +91 81465 09068 · <a href="mailto:finauraindia@gmail.com">finauraindia@gmail.com</a> · finauraindia.com<br>
+        <span style="color:#d97706;font-weight:600">AMFI · NSE · BSE · IRDAI Registered</span>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<div class="sticky-cta" id="stickyCta">
+    <div class="sticky-cta-inner">
+        <div class="sticky-cta-text">
+            <span class="sticky-cta-emoji">📅</span>
+            <div>
+                <div class="sticky-cta-title">Ready to turn these numbers into a real plan?</div>
+                <div class="sticky-cta-sub">Consult Finaura™ — AMFI registered MFD · ARN293004</div>
+            </div>
+        </div>
+        <div class="sticky-cta-btns">
+            <button class="cta-btn cta-btn-wa" onclick="whatsappChat()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/918146509068?text=Hi%20Akash!%20I%20visited%20finauraindia.com%20and%20would%20like%20to%20know%20more." class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <span class="wa-label">Chat with us</span>
+    <div class="wa-bubble">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </div>
+</a>
+<!-- ── DOWNLOAD MODAL ── -->
+<div class="dl-overlay" id="dlOverlay" onclick="if(event.target===this)closeDownload()">
+  <div class="dl-modal" id="dlModal">
+    <div id="dl-step1">
+      <div class="dl-header">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+          <div>
+            <div class="dl-logo">Finaura<span>&#x2122;</span></div>
+            <div class="dl-logo-sub">Investment Solution &middot; Ludhiana, Punjab</div>
+          </div>
+          <button onclick="closeDownload()" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:50%;width:32px;height:32px;cursor:pointer;color:rgba(255,255,255,.5);font-size:1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;">&#x2715;</button>
+        </div>
+        <div style="margin-top:1.5rem;padding:1.25rem;background:rgba(184,146,42,.08);border:1px solid rgba(184,146,42,.2);">
+          <div style="font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;">Your Result</div>
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <div id="dl-step1-emoji" style="font-size:2rem;flex-shrink:0;"></div>
+            <div>
+              <div id="dl-step1-calcname" style="font-size:.8rem;color:rgba(255,255,255,.5);margin-bottom:.2rem;"></div>
+              <div id="dl-step1-result" style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:var(--gold);line-height:1;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dl-body">
+        <div style="margin-bottom:1.5rem;">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--ink);margin-bottom:.35rem;">Get Your Personalised Report</div>
+          <p style="font-size:.82rem;color:var(--ink-muted);line-height:1.65;margin:0;">Enter your details — your report downloads instantly.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:.75rem;">
+          <div>
+            <label style="font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);display:block;margin-bottom:.35rem;">Full Name *</label>
+            <input id="lead-name" type="text" placeholder="e.g. Priya Sharma" autocomplete="name" style="width:100%;padding:.7rem .9rem;border:1.5px solid var(--border);font-size:.88rem;font-family:inherit;background:#fff;box-sizing:border-box;outline:none;transition:border-color .2s;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='var(--border)'">
+          </div>
+          <div>
+            <label style="font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);display:block;margin-bottom:.35rem;">Mobile Number *</label>
+            <input id="lead-mobile" type="tel" placeholder="e.g. 98765 43210" maxlength="10" inputmode="numeric" style="width:100%;padding:.7rem .9rem;border:1.5px solid var(--border);font-size:.88rem;font-family:inherit;background:#fff;box-sizing:border-box;outline:none;transition:border-color .2s;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='var(--border)'">
+          </div>
+          <div>
+            <label style="font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);display:block;margin-bottom:.35rem;">Email <span style="font-weight:400;opacity:.5">(optional)</span></label>
+            <input id="lead-email" type="email" placeholder="e.g. priya@gmail.com" style="width:100%;padding:.7rem .9rem;border:1.5px solid var(--border);font-size:.88rem;font-family:inherit;background:#fff;box-sizing:border-box;outline:none;transition:border-color .2s;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='var(--border)'">
+          </div>
+          <div id="lead-error" style="display:none;color:#dc2626;font-size:.78rem;font-weight:600;text-align:center;padding:.5rem;background:#fef2f2;border:1px solid #fecaca;"></div>
+        </div>
+        <div style="margin-top:1.25rem;display:flex;gap:.75rem;">
+          <button onclick="submitLead()" style="flex:1;background:var(--gold);color:#fff;border:none;padding:.875rem;font-size:.85rem;font-weight:700;letter-spacing:.05em;cursor:pointer;font-family:inherit;">Get My Report &rarr;</button>
+          <button onclick="closeDownload()" style="padding:.875rem 1.1rem;background:transparent;border:1.5px solid var(--border);font-size:.82rem;color:var(--ink-muted);cursor:pointer;font-family:inherit;">Cancel</button>
+        </div>
+        <p style="font-size:.68rem;color:var(--ink-faint);text-align:center;margin:.75rem 0 0;line-height:1.5;">&#x1F512; Your details are confidential. We don't share your data.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ── helpers ── */
+function syncFromRange(rid,tid){document.getElementById(tid).value=document.getElementById(rid).value;}
+function syncFromText(rid,tid){const t=document.getElementById(tid),r=document.getElementById(rid);let v=parseFloat(t.value);v=Math.min(Math.max(v,+r.min),+r.max);r.value=v;}
+function fmt(n){if(n>=10000000)return'₹'+(n/10000000).toFixed(2)+' Cr';if(n>=100000)return'₹'+(n/100000).toFixed(2)+' L';return'₹'+Math.round(n).toLocaleString('en-IN');}
+function anim(el,v){el.textContent=v;el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop');}
+function miniChart(id,inv,ret){const el=document.getElementById(id);if(!el)return;const tot=inv+ret;el.innerHTML='';for(let i=0;i<8;i++){const p=(i+1)/8;const d=document.createElement('div');d.className='bar bar-inv';d.style.height=Math.round((inv/tot)*36*p)+'px';el.appendChild(d);const r=document.createElement('div');r.className='bar bar-ret';r.style.height=Math.round((ret/tot)*36*Math.pow(p,0.7))+'px';el.appendChild(r);}}
+function g(id){return +document.getElementById(id).value;}
+
+/* ── calculators ── */
+function updateSIP(){const a=g('sip-amt'),r=g('sip-rate')/100/12,n=g('sip-yr')*12;const fv=a*((Math.pow(1+r,n)-1)/r)*(1+r),inv=a*n;anim(document.getElementById('sip-result'),fmt(fv));document.getElementById('sip-invested').textContent=fmt(inv);document.getElementById('sip-returns').textContent=fmt(fv-inv);miniChart('sip-chart',inv,Math.max(0,fv-inv));}
+function updateLS(){const a=g('ls-amt'),r=g('ls-rate')/100,y=g('ls-yr');const fv=a*Math.pow(1+r,y);anim(document.getElementById('ls-result'),fmt(fv));document.getElementById('ls-invested').textContent=fmt(a);document.getElementById('ls-returns').textContent=fmt(fv-a);miniChart('ls-chart',a,Math.max(0,fv-a));}
+function updateSWP(){const c=g('swp-corpus'),w=g('swp-wd'),r=g('swp-rate')/100/12;let b=c,m=0;while(b>0&&m<1200){b=b*(1+r)-w;m++;}anim(document.getElementById('swp-result'),m>=1200?'∞ Never depletes':Math.floor(m/12)+' yrs '+(m%12)+' mo');document.getElementById('swp-total').textContent=fmt(w*m);}
+function updateCAGR(){const i=g('cagr-init'),f=g('cagr-final'),y=g('cagr-yr');const c=(Math.pow(f/i,1/y)-1)*100;anim(document.getElementById('cagr-result'),c.toFixed(2)+'%');document.getElementById('cagr-gain').textContent=fmt(f-i);document.getElementById('cagr-growth').textContent=(((f-i)/i)*100).toFixed(1)+'%';}
+function updateSTP(){const ls=g('stp-ls'),t=g('stp-transfer'),er=g('stp-eq')/100/12,dr=g('stp-debt')/100/12;const mo=Math.ceil(ls/t);let db=ls,eq=0;for(let i=0;i<mo;i++){db=Math.max(0,db*(1+dr)-t);eq=(eq+t)*(1+er);}anim(document.getElementById('stp-result'),fmt(eq+db));document.getElementById('stp-months').textContent=mo+' mo';}
+function updateStepSIP(){const s=g('step-amt'),h=g('step-hike')/100,r=g('step-rate')/100/12,y=g('step-yr');let c=0,inv=0,m=s;for(let i=0;i<y;i++){for(let j=0;j<12;j++){c=(c+m)*(1+r);inv+=m;}m*=(1+h);}const n=y*12,flat=s*((Math.pow(1+r,n)-1)/r)*(1+r);anim(document.getElementById('step-result'),fmt(c));document.getElementById('step-invested').textContent=fmt(inv);document.getElementById('step-vs-flat').textContent='+'+fmt(c-flat)+' more';}
+function updateReverseSIP(){const t=g('rsip-target'),r=g('rsip-rate')/100/12,n=g('rsip-yr')*12;const sip=t*r/((Math.pow(1+r,n)-1)*(1+r));const inv=sip*n;anim(document.getElementById('rsip-result'),fmt(sip)+'/mo');document.getElementById('rsip-invested').textContent=fmt(inv);document.getElementById('rsip-returns').textContent=fmt(Math.max(0,t-inv));miniChart('rsip-chart',inv,Math.max(0,t-inv));}
+function updateELSS(){const a=g('elss-amt'),r=g('elss-rate')/100/12,n=g('elss-yr')*12;const slab=parseFloat(document.getElementById('elss-slab').value);const c=a*((Math.pow(1+r,n)-1)/r)*(1+r);const inv=a*n;const ts=Math.min(a*12,150000)*slab*1.04;anim(document.getElementById('elss-result'),fmt(c));document.getElementById('elss-taxsaved').textContent=fmt(ts);document.getElementById('elss-totaltax').textContent=fmt(ts*g('elss-yr'));document.getElementById('elss-invested').textContent=fmt(inv);miniChart('elss-chart',inv,Math.max(0,c-inv));}
+function updateRetirement(){const a=g('ret-age'),ra=Math.max(a+1,g('ret-retire')),ex=g('ret-exp'),inf=g('ret-inf')/100;const y=ra-a,fe=ex*Math.pow(1+inf,y),corp=fe*12*25,sr=0.12/12,n=y*12,sip=corp*sr/((Math.pow(1+sr,n)-1)*(1+sr));anim(document.getElementById('ret-result'),fmt(corp));document.getElementById('ret-sip').textContent=fmt(sip)+'/mo';}
+function updateEdu(){const ca=g('edu-age'),ga=g('edu-goal'),co=g('edu-cost'),inf=g('edu-inf')/100;const y=Math.max(1,ga-ca),fc=co*Math.pow(1+inf,y),sr=0.12/12,n=y*12,sip=fc*sr/((Math.pow(1+sr,n)-1)*(1+sr));anim(document.getElementById('edu-result'),fmt(fc));document.getElementById('edu-sip').textContent=fmt(sip)+'/mo';}
+function updateWedding(){const b=g('wed-budget'),y=g('wed-yr'),inf=g('wed-inf')/100;const f=b*Math.pow(1+inf,y),sr=0.12/12,n=y*12,sip=f*sr/((Math.pow(1+sr,n)-1)*(1+sr));anim(document.getElementById('wed-result'),fmt(f));document.getElementById('wed-sip').textContent=fmt(sip)+'/mo';}
+function updateDream(){const c=g('dream-cost'),y=g('dream-yr'),r=g('dream-rate')/100/12,n=y*12,sip=c*r/((Math.pow(1+r,n)-1)*(1+r));anim(document.getElementById('dream-result'),fmt(sip)+'/mo');document.getElementById('dream-invested').textContent=fmt(sip*n);document.getElementById('dream-returns').textContent=fmt(Math.max(0,c-sip*n));}
+function updateEMI(){const a=g('emi-amt'),r=g('emi-rate')/100/12,n=g('emi-yr')*12;const emi=a*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1),int=emi*n-a;anim(document.getElementById('emi-result'),fmt(emi));document.getElementById('emi-principal').textContent=fmt(a);document.getElementById('emi-interest').textContent=fmt(int);miniChart('emi-chart',a,int);}
+function updateFD(){const a=g('fd-amt'),r=g('fd-rate')/100,y=g('fd-yr');const m=a*Math.pow(1+r/4,4*y);anim(document.getElementById('fd-result'),fmt(m));document.getElementById('fd-principal').textContent=fmt(a);document.getElementById('fd-interest').textContent=fmt(m-a);}
+function updateRD(){const a=g('rd-amt'),r=g('rd-rate')/100/4,n=g('rd-yr')*12;const m=a*(Math.pow(1+r,n/3)-1)/(1-Math.pow(1+r,-1/3));anim(document.getElementById('rd-result'),fmt(m));document.getElementById('rd-principal').textContent=fmt(a*n);document.getElementById('rd-interest').textContent=fmt(m-a*n);}
+function updatePPF(){const a=g('ppf-amt'),r=g('ppf-rate')/100,y=g('ppf-yr');let b=0;for(let i=0;i<y;i++)b=(b+a)*(1+r);anim(document.getElementById('ppf-result'),fmt(b));document.getElementById('ppf-invested').textContent=fmt(a*y);document.getElementById('ppf-interest').textContent=fmt(b-a*y);}
+function updatePOMIS(){const a=g('pomis-amt'),r=g('pomis-rate')/100;const m=a*r/12;anim(document.getElementById('pomis-result'),fmt(m));document.getElementById('pomis-annual').textContent=fmt(m*12);document.getElementById('pomis-total').textContent=fmt(m*60);}
+function updateInflation(){const n=g('inf-nominal')/100,inf=g('inf-rate')/100,a=g('inf-amt');const real=((1+n)/(1+inf)-1)*100;anim(document.getElementById('inf-result'),real.toFixed(2)+'%');document.getElementById('inf-nominal-val2').textContent=fmt(a*Math.pow(1+n,10));document.getElementById('inf-real-val').textContent=fmt(a*Math.pow(1+real/100,10));}
+function updateEF(){const e=g('ef-exp'),em=g('ef-emi'),m=g('ef-months');const tot=(e+em)*m;anim(document.getElementById('ef-result'),fmt(tot));document.getElementById('ef-monthly').textContent=fmt(e+em);document.getElementById('ef-liquid').textContent=fmt(tot);}
+function updateTax(){const inc=g('tax-income'),s80c=Math.min(g('tax-80c'),150000),hra=g('tax-hra'),oth=g('tax-other');const oTax=inc-50000-s80c-hra-oth;function oT(ti){let t=0;ti=Math.max(0,ti);if(ti>1000000)t+=(ti-1000000)*.30;if(ti>500000)t+=(Math.min(ti,1000000)-500000)*.20;if(ti>250000)t+=(Math.min(ti,500000)-250000)*.05;return t*1.04;}const nTax=Math.max(0,inc-75000);function nT(ti){let t=0;if(ti>1500000)t+=(ti-1500000)*.30;if(ti>1200000)t+=(Math.min(ti,1500000)-1200000)*.20;if(ti>900000)t+=(Math.min(ti,1200000)-900000)*.15;if(ti>600000)t+=(Math.min(ti,900000)-600000)*.10;if(ti>300000)t+=(Math.min(ti,600000)-300000)*.05;if(ti<=700000)t=0;return t*1.04;}const ot=oT(oTax),nt=nT(nTax),winner=ot<=nt?'📋 Old Regime':'🆕 New Regime';anim(document.getElementById('tax-winner'),winner);document.getElementById('tax-old').textContent=fmt(ot);document.getElementById('tax-new').textContent=fmt(nt);document.getElementById('tax-saving').textContent=fmt(Math.abs(ot-nt));}
+function updateBudget(){const inc=g('bud-income'),np=g('bud-needs'),wp=g('bud-wants'),sp=Math.max(0,100-np-wp);anim(document.getElementById('bud-result'),fmt(inc*sp/100));document.getElementById('bud-needs-val').textContent=fmt(inc*np/100);document.getElementById('bud-wants-val').textContent=fmt(inc*wp/100);document.getElementById('bud-sip').textContent=fmt(inc*sp/100*.8);}
+function updateTerm(){const inc=g('term-income'),age=g('term-age'),loan=g('term-loan'),dep=g('term-dep');const y=Math.max(5,60-age);const cov=Math.ceil((inc*y*.7+loan+dep*500000)/2500000)*2500000;anim(document.getElementById('term-result'),fmt(cov));document.getElementById('term-income-rep').textContent=fmt(inc*y*.7);document.getElementById('term-loan-cover').textContent=fmt(loan);}
+function updateGratuity(){const s=g('grat-salary'),y=g('grat-years');const gr=Math.round(s*15*y/26);anim(document.getElementById('grat-result'),fmt(gr));document.getElementById('grat-taxfree').textContent=fmt(Math.min(gr,2000000));document.getElementById('grat-taxable').textContent=gr>2000000?fmt(gr-2000000):'₹0 (fully exempt)';}
+function updateHealthIns(){const age=g('hi-age'),mem=g('hi-members'),ex=g('hi-existing');const tier=parseInt(document.getElementById('hi-city').value);const tb=['','Metro','Tier 2','Tier 3'];document.getElementById('hi-tier-badge').textContent=tb[tier]||'Tier 2';const base=tier===1?1000000:tier===2?750000:500000;const af=age>50?1.5:age>35?1.25:1;const ff=mem>4?2:mem>2?1.5:1;const rec=base*af*ff;const gap=Math.max(0,rec-ex);const prem=rec*(age>50?.04:age>35?.03:.02)*(mem>1?1.5:1);anim(document.getElementById('hi-result'),fmt(rec));document.getElementById('hi-gap').textContent=gap>0?fmt(gap):'Already covered ✅';document.getElementById('hi-premium').textContent='~'+fmt(prem)+'/yr';}
+function updateLVI(){const amt=g('lvi-amt'),lr=g('lvi-loan')/100,ir=g('lvi-inv')/100,y=g('lvi-yr');const saved=amt*lr*y;const invVal=amt*Math.pow(1+ir,y);const winner=invVal-amt>saved?'📈 Invest':'🏦 Prepay Loan';anim(document.getElementById('lvi-result'),winner);document.getElementById('lvi-saved').textContent=fmt(saved);document.getElementById('lvi-invval').textContent=fmt(invVal);}
+function updateIRR(){const inv=g('irr-invested'),cur=g('irr-current'),y=g('irr-yr'),mo=g('irr-monthly');const tot=inv+mo*y*12;const cf=[-inv];const months=y*12;for(let i=0;i<months;i++)cf.push(-mo);cf[cf.length-1]+=cur;let rate=0.01;for(let k=0;k<100;k++){let npv=0,dnpv=0;for(let t=0;t<cf.length;t++){npv+=cf[t]/Math.pow(1+rate,t);dnpv-=t*cf[t]/Math.pow(1+rate,t+1);}const nr=rate-npv/dnpv;if(Math.abs(nr-rate)<1e-7)break;rate=nr;}const irr=(Math.pow(1+rate,12)-1)*100;anim(document.getElementById('irr-result'),isNaN(irr)||irr<-99?'N/A':irr.toFixed(2)+'%');document.getElementById('irr-total-inv').textContent=fmt(tot);document.getElementById('irr-gain').textContent=fmt(cur-tot);}
+
+var CALENDAR_URL='https://calendar.app.google/MWmNEEbRpCMh1hxi7';
+function toggleHowTo(btn){btn.classList.toggle('open');btn.nextElementSibling.classList.toggle('open');}
+function bookSession(){window.open(CALENDAR_URL,'_blank');}
+function toggleMenu(){var m=document.getElementById('mobMenu');if(m)m.classList.toggle('open');}
+function whatsappChat(){window.open('https://wa.me/918146509068','_blank');}
+function closeDownload(){var ov=document.getElementById('dlOverlay');if(ov)ov.classList.remove('open');}
+
+function updateXIRR(){
+    var inv=g('xirr-invested'),cur=g('xirr-current'),y=g('xirr-yr'),sip=g('xirr-sip');
+    if(y<=0||inv<=0)return;
+    var months=Math.round(y*12);
+    var cf=[],totalSIP=sip*months;
+    var lump=Math.max(0,inv-totalSIP);
+    cf.push(-lump);
+    for(var i=1;i<months;i++) cf.push(-sip);
+    cf[cf.length-1]+=(cur-sip);
+    var rate=0.01;
+    for(var k=0;k<300;k++){
+        var npv=0,dnpv=0;
+        for(var t=0;t<cf.length;t++){var d=Math.pow(1+rate,t);npv+=cf[t]/d;dnpv-=t*cf[t]/(d*(1+rate));}
+        if(Math.abs(dnpv)<1e-10) break;
+        var nr=rate-npv/dnpv;
+        if(Math.abs(nr-rate)<1e-8) break;
+        rate=Math.max(-0.99,nr);
+    }
+    var xirr=(Math.pow(1+rate,12)-1)*100;
+    var gain=cur-inv;
+    var fd=inv*Math.pow(1.07,y)-inv;
+    var res=document.getElementById('xirr-result');
+    if(res) anim(res,(isNaN(xirr)||xirr<-99)?'N/A':xirr.toFixed(1)+'%');
+    var iS=document.getElementById('xirr-inv-show');
+    var gS=document.getElementById('xirr-gain');
+    var fS=document.getElementById('xirr-vs-fd');
+    if(iS) iS.textContent=fmt(inv);
+    if(gS) gS.textContent=fmt(gain);
+    if(fS) fS.textContent=(gain>fd?'+':'')+fmt(gain-fd);
+}
+
+function getAdviceIRR(card){
+    var gi=function(id){var el=card.querySelector('#'+id);return el?+el.value:0;};
+    var F=function(n){if(n>=10000000)return'\u20B9'+(n/10000000).toFixed(1)+' Cr';if(n>=100000)return'\u20B9'+(n/100000).toFixed(1)+'L';return'\u20B9'+Math.round(n).toLocaleString('en-IN');};
+    var inv=gi('irr-invested'),cur=gi('irr-current'),y=gi('irr-yr');
+    var irr=(Math.pow(1+0.01,12)-1)*100;
+    return {emoji:'&#x1F4D0;',title:'IRR Calculated',insight:'On '+F(inv)+' invested over '+y+' years, your investment grew to '+F(cur)+'. A strong IRR (above 12%) beats most traditional instruments.',steps:['Compare your IRR to the Nifty 50 long-term average of 12-14% to benchmark your performance.','If IRR is below 8%, your money is likely underperforming — time to review your fund selection.','Book a portfolio review with Finaura to identify underperformers and reallocate.']};
+}
+
+function getAdviceXIRR(card){
+    var gi=function(id){var el=card.querySelector('#'+id);return el?+el.value:0;};
+    var F=function(n){if(n>=10000000)return'\u20B9'+(n/10000000).toFixed(1)+' Cr';if(n>=100000)return'\u20B9'+(n/100000).toFixed(1)+'L';return'\u20B9'+Math.round(n).toLocaleString('en-IN');};
+    var inv=gi('xirr-invested'),cur=gi('xirr-current'),y=gi('xirr-yr');
+    return {emoji:'&#x1F4CA;',title:'XIRR Shows Your True Return',insight:'XIRR accounts for the timing of each SIP instalment — making it the most accurate measure of mutual fund performance. Above 12% is excellent for equity funds.',steps:['Always use XIRR (not simple returns) when evaluating any investment with multiple cash flows.','If your XIRR is below 10% after 5+ years in equity, consider switching funds.','Share this XIRR with Finaura for a free fund comparison against top-rated alternatives.']};
+}
+
+function getAdvice(title,card){
+    var gi=function(id){var el=card.querySelector('#'+id);return el?+el.value:0;};
+    var F=function(n){if(n>=10000000)return'₹'+(n/10000000).toFixed(1)+' Cr';if(n>=100000)return'₹'+(n/100000).toFixed(1)+'L';return'₹'+Math.round(n).toLocaleString('en-IN');};
+    var N=function(n){return Math.round(n).toLocaleString('en-IN');};
+    try{
+        if(title==='SIP Calculator'){var a=gi('sip-amt'),rate=gi('sip-rate'),yrs=gi('sip-yr'),r=rate/100/12,n=yrs*12,fv=a*((Math.pow(1+r,n)-1)/r)*(1+r),inv=a*n,mult=(fv/inv).toFixed(1);return{emoji:'&#x1F389;',title:'Your SIP Grows '+mult+'x!',insight:'Investing '+F(a)+'/month at '+rate+'% for '+yrs+' years creates '+F(fv)+'. Compounding multiplies your money '+mult+'x.',steps:['Stay invested the full '+yrs+' years — early exit can cost you '+F(fv*0.15)+' in lost compounding.','Step-Up your SIP by 10% annually to build significantly more wealth over time.','Book a free session with Finaura to choose the right Flexi-cap + Mid-cap fund mix.']};}
+        if(title==='Lumpsum Calculator'){var a=gi('ls-amt'),rate=gi('ls-rate'),yrs=gi('ls-yr'),fv=a*Math.pow(1+rate/100,yrs),mult=(fv/a).toFixed(1);return{emoji:'&#x1F4B0;',title:mult+'x Growth on Your Investment!',insight:F(a)+' invested once at '+rate+'% for '+yrs+' years becomes '+F(fv)+' — no additional effort required, just time.',steps:['Do NOT redeem early — each extra year adds significantly to your corpus.','For amounts above 5L, use a 12-month STP into equity to reduce timing risk.','Ask Finaura to identify the best Flexi-cap or Index fund for this lumpsum.']};}
+        if(title==='Step-Up SIP Calculator'){var a=gi('step-amt'),hike=gi('step-hike'),rate=gi('step-rate'),yrs=gi('step-yr'),r=rate/100/12,flat=a*((Math.pow(1+r,yrs*12)-1)/r)*(1+r);var su=0,m2=a;for(var ii=0;ii<yrs;ii++){for(var jj=0;jj<12;jj++){su=(su+m2)*(1+r);}m2*=(1+hike/100);}return{emoji:'&#x1F4C8;',title:'Step-Up Supercharges Your Wealth!',insight:'Starting at '+F(a)+'/month with '+hike+'% annual increases builds '+F(su)+' vs '+F(flat)+' for a flat SIP — that is '+F(su-flat)+' extra wealth from discipline alone.',steps:['Link your SIP step-up to your April salary increment — automate it.','Even a 5% step-up is dramatically better than no step-up at all.','Ask Finaura to set up an auto step-up mandate — takes 5 minutes online.']};}
+        if(title==='ELSS Tax Saving Calculator'){var a=gi('elss-amt'),rate=gi('elss-rate'),yrs=gi('elss-yr'),slabEl=document.getElementById('elss-slab'),slab=slabEl?parseFloat(slabEl.value):0.3,r=rate/100/12,n=yrs*12,cv=a*((Math.pow(1+r,n)-1)/r)*(1+r),ts=Math.min(a*12,150000)*slab*1.04;return{emoji:'&#x1F48E;',title:'Tax Saved + Wealth Created!',insight:'Your ELSS SIP of '+F(a)+'/month saves '+F(ts)+' in tax every year AND builds '+F(cv)+' over '+yrs+' years.',steps:['Invest via monthly SIP year-round — not lump sum in March.','After the 3-year lock-in, keep it going — equity rewards long-term holders.','Ask Finaura to pick the top-rated ELSS fund for your risk profile.']};}
+        if(title==='SWP Calculator'){var corpus=gi('swp-corpus'),wd=gi('swp-wd'),rate=gi('swp-rate'),safe=Math.round(corpus*rate/100/12);return{emoji:'&#x1F504;',title:'Sustainable Income Planned!',insight:'Withdrawing '+F(wd)+'/month from '+F(corpus)+' at '+rate+'% return. Safe withdrawal rate is '+F(safe)+'/month — which preserves your corpus indefinitely.',steps:[wd>safe?'Your withdrawal exceeds the safe rate by '+F(wd-safe)+'/month. Consider reducing to '+F(safe)+'/month.':'Your withdrawal is within safe limits — your corpus keeps growing.','Park 6 months of withdrawals ('+F(wd*6)+') in a liquid fund as a cash buffer.','Review this SWP annually with Finaura to adjust for inflation and portfolio performance.']};}
+        if(title==='CAGR Calculator'){var ini=gi('cagr-init'),fin=gi('cagr-final'),y=gi('cagr-yr');if(ini<=0||y<=0)return;var cagr=(Math.pow(fin/ini,1/y)-1)*100,real=cagr-6;return{emoji:'&#x1F4CA;',title:'Your CAGR: '+cagr.toFixed(1)+'%',insight:F(ini)+' grew to '+F(fin)+' in '+y+' years — a CAGR of '+cagr.toFixed(1)+'%. After 6% inflation, your real return is '+real.toFixed(1)+'% per year.',steps:[real>4?'Real return of '+real.toFixed(1)+'% is solid — your investment genuinely beats inflation.':'Real return of '+real.toFixed(1)+'% means inflation is eroding most gains. Shift more to equity.','Compare your '+cagr.toFixed(1)+'% CAGR to the Nifty 50 long-term average of 12-14%.','Ask Finaura to review which funds can improve your CAGR going forward.']};}
+        if(title==='Retirement Corpus Calculator'){var age=gi('ret-age'),ret2=gi('ret-retire'),exp=gi('ret-exp'),inf=gi('ret-inf'),y=ret2-age,fe=exp*Math.pow(1+inf/100,y),corp=fe*12*25,r=0.12/12,n=y*12,sip=corp*r/((Math.pow(1+r,n)-1)*(1+r));return{emoji:'&#x1F3D6;',title:'Retirement Target: '+F(corp),insight:'You need '+F(corp)+' by age '+ret2+' to sustain '+F(exp)+'/month in today\'s money. Starting '+F(sip)+'/month now builds this in '+y+' years.',steps:['Start your '+F(sip)+'/month retirement SIP today — every year of delay increases the required amount.','Use Flexi-cap or Index funds — they outperform over 20+ year horizons.','Book a session with Finaura to factor in your EPF, PPF and existing assets.']};}
+        if(title==='Child Education Planner'){var cAge=gi('edu-age'),gAge=gi('edu-goal'),cost=gi('edu-cost'),inf2=gi('edu-inf'),y=Math.max(1,gAge-cAge),fc=cost*Math.pow(1+inf2/100,y),r=0.12/12,n=y*12,sip=fc*r/((Math.pow(1+r,n)-1)*(1+r));return{emoji:'&#x1F393;',title:'Education Fund: '+F(fc)+' Target',insight:'Today\'s '+F(cost)+' education cost becomes '+F(fc)+' in '+y+' years. Starting '+F(sip)+'/month in equity SIPs builds this fund comfortably.',steps:['Open a dedicated education SIP of '+F(sip)+'/month — label it separately.','Use equity funds for the first '+Math.max(y-3,1)+' years, then shift to debt 3 years before admission.','Ask Finaura to set up a goal-based SIP with automatic glide path.']};}
+        if(title==='PPF Calculator'){var a=gi('ppf-amt'),rate=gi('ppf-rate'),y=gi('ppf-yr');var b=0;for(var i=0;i<y;i++){b=(b+a)*(1+rate/100);}return{emoji:'&#x1F6E1;',title:'PPF Builds '+F(b)+' Tax-Free',insight:F(a)+'/year in PPF at '+rate+'% for '+y+' years creates '+F(b)+' — 100% tax-free. That is '+F(b-a*y)+' in interest the government does not touch.',steps:['Always invest before April 5 each year — PPF interest is calculated on lowest balance between the 5th and last day.','PPF is your debt allocation — pair it with equity SIPs for balanced wealth creation.','After maturity, extend in 5-year blocks to keep the tax-free compounding going.']};}
+        if(title==='Inflation Adjusted Return'){var nom=gi('inf-nominal'),inf3=gi('inf-rate'),real=((1+nom/100)/(1+inf3/100)-1)*100;return{emoji:'&#x1F4C9;',title:'Real Return: '+real.toFixed(1)+'% After Inflation',insight:'At '+nom+'% nominal minus '+inf3+'% inflation, your real purchasing power grows at only '+real.toFixed(1)+'% per year.',steps:['To beat '+inf3+'% inflation, you need at least '+(inf3+2)+'% nominal return — equity funds historically deliver 12-14%.','Every rupee in a savings account loses real value every year against '+inf3+'% inflation.','Ask Finaura to build a portfolio with a real return target above inflation.']};}
+        if(title==='EMI Calculator'){var a=gi('emi-amt'),rate=gi('emi-rate'),y=gi('emi-yr'),r=rate/100/12,n=y*12,emi=a*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1),ti=emi*n-a,pct=Math.round(ti/a*100);return{emoji:'&#x1F3E0;',title:'You Pay '+pct+'% Extra in Interest',insight:'On '+F(a)+' at '+rate+'% for '+y+' years, your EMI is '+F(emi)+'/month. Total interest: '+F(ti)+' — '+pct+'% on top of principal.',steps:['Prepaying Rs 50,000 annually saves significant interest and reduces tenure by 2-3 years.','If your rate is above 8.5%, ask your lender for a revision.','Ask Finaura for the optimal EMI prepayment vs SIP balance to maximise your net worth.']};}
+        if(title==='Term Insurance Coverage'){var inc=gi('term-income'),age2=gi('term-age'),loan=gi('term-loan'),dep=gi('term-dep'),cov=Math.ceil((inc*Math.max(5,60-age2)*0.7+loan+dep*500000)/2500000)*2500000;return{emoji:'&#x1F6E1;',title:'You Need '+F(cov)+' Cover',insight:'To replace your income, clear your loans, and protect your '+dep+' dependent(s) — you need '+F(cov)+' in term life cover.',steps:['Buy pure term insurance, NOT endowment or ULIP. A 1 Cr plan at age 30 costs ~Rs 700-900/month.','Choose a 30+ year policy term with annual premium — never single premium.','Finaura recommends comparing ICICI iSelect Star, HDFC Click 2 Protect, and Max Smart Secure plans.']};}
+        if(title==='Health Insurance Cover'){var hiAge=gi('hi-age'),mem=gi('hi-members'),ex=gi('hi-existing'),tierEl=document.getElementById('hi-city'),tier=tierEl?parseInt(tierEl.value):2,base=tier===1?1000000:750000,af=hiAge>50?1.5:hiAge>35?1.25:1,ff=mem>4?2:mem>2?1.5:1,rec=base*af*ff,gap=Math.max(0,rec-ex);return{emoji:'&#x1F3E5;',title:'Recommended Cover: '+F(rec),insight:'For '+mem+' family member(s) at your age, recommended health cover is '+F(rec)+'. '+(gap>0?'You have a gap of '+F(gap)+' — one hospitalisation can wipe out savings.':'Your existing cover appears adequate.'),steps:[gap>0?'Add '+F(gap)+' via a Super Top-Up policy immediately — much cheaper than base plans.':'Review annually and increase cover by 10-15% every 2 years.','Always pick a plan with cashless settlement at major hospitals in your city.','Finaura can compare Niva Bupa, HDFC Ergo, and Star Health for the best value plan.']};}
+        if(title==='IRR Calculator'){var inv=gi('irr-invested'),cur=gi('irr-current'),y=gi('irr-yr'),mo=gi('irr-monthly'),tot=inv+mo*y*12,cf=[-inv],months=y*12;for(var i=0;i<months;i++)cf.push(-mo);cf[cf.length-1]+=cur;var rate=0.01;for(var k=0;k<100;k++){var npv=0,dnpv=0;for(var t=0;t<cf.length;t++){npv+=cf[t]/Math.pow(1+rate,t);dnpv-=t*cf[t]/Math.pow(1+rate,t+1);}var nr=rate-npv/dnpv;if(Math.abs(nr-rate)<1e-7)break;rate=nr;}var irr=(Math.pow(1+rate,12)-1)*100;return{emoji:'&#x1F4D0;',title:'Your IRR: '+(isNaN(irr)?'N/A':irr.toFixed(1))+'%',insight:'On '+F(inv)+' invested with '+F(mo)+'/month over '+y+' years, your investment grew to '+F(cur)+'. An IRR above 12% beats most traditional instruments.',steps:['Compare your IRR to Nifty 50 long-term average of 12-14% to benchmark your performance.','If IRR is below 8%, your money is underperforming — time to review your fund selection.','Book a portfolio review with Finaura to identify underperformers and reallocate.']};}
+        if(title==='XIRR Calculator'){var inv=gi('xirr-invested'),cur=gi('xirr-current'),y=gi('xirr-yr');return{emoji:'&#x1F4CA;',title:'XIRR Shows Your True Return',insight:'XIRR accounts for the exact timing of each SIP instalment — making it the most accurate measure of mutual fund performance. Above 12% is excellent for equity funds.',steps:['Always use XIRR (not simple returns) when evaluating investments with multiple cash flows.','If your XIRR is below 10% after 5+ years in equity, consider switching funds.','Share this XIRR with Finaura for a free fund comparison against top-rated alternatives.']};}
+    }catch(e){console.log('advice err',e);}
+    return{emoji:'&#x2705;',title:'Your Result is Ready',insight:'Review these numbers against your goals and use them as a starting point for action.',steps:['Compare this result to your actual financial goal to see if you are on track.','Adjust the inputs to model different scenarios and find the optimal strategy.','Book a free consultation with Finaura to turn these numbers into a real plan.']};
+}
+
+/* ── Show download modal ── */
+function showDownload(btn){
+    var card=btn.closest('.card');
+    var title=card.querySelector('.card-title').textContent.trim();
+    var result=(card.querySelector('.result-value')||{}).textContent||'--';
+    var breakdown=[].slice.call(card.querySelectorAll('.bd-item')).map(function(el){return{label:(el.querySelector('.bd-label')||{}).textContent||'',value:(el.querySelector('.bd-val')||{}).textContent||''};}).filter(function(x){return x.label&&x.value;});
+    var advice=getAdvice(title,card);
+    window._dlData={title:title,result:result,breakdown:breakdown,advice:advice,leadName:'',today:new Date().toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric'})};
+    document.getElementById('dl-step1-emoji').innerHTML=advice.emoji||'&#x2705;';
+    document.getElementById('dl-step1-calcname').textContent=title;
+    document.getElementById('dl-step1-result').textContent=result;
+    document.getElementById('lead-name').value='';
+    document.getElementById('lead-mobile').value='';
+    document.getElementById('lead-email').value='';
+    document.getElementById('lead-error').style.display='none';
+    document.getElementById('dl-step1').innerHTML=document.getElementById('dl-step1').innerHTML;
+    document.getElementById('dlOverlay').classList.add('open');
+}
+
+/* ── Submit lead & trigger download ── */
+function submitLead(){
+    var name=document.getElementById('lead-name').value.trim();
+    var mobile=document.getElementById('lead-mobile').value.trim();
+    var email=document.getElementById('lead-email').value.trim();
+    var err=document.getElementById('lead-error');
+    if(!name){err.textContent='Please enter your full name.';err.style.display='block';return;}
+    if(!mobile||!/^[6-9]\d{9}$/.test(mobile)){err.textContent='Please enter a valid 10-digit mobile number.';err.style.display='block';return;}
+    if(email&&!/^[^@]+@[^@]+\.[^@]+$/.test(email)){err.textContent='Please enter a valid email address.';err.style.display='block';return;}
+    err.style.display='none';
+    window._dlData.leadName=name;
+    window._dlData.leadMobile=mobile;
+    window._dlData.leadEmail=email;
+    generatePDF();
+    document.getElementById('dl-step1').innerHTML='<div style="text-align:center;padding:2.5rem 1rem;">'
+        +'<div style="font-size:3rem;margin-bottom:1rem;">&#x2B07;&#xFE0F;</div>'
+        +'<div style="font-family:\'Cormorant Garamond\',serif;font-size:1.4rem;font-weight:600;color:var(--ink);margin-bottom:.75rem;">Report Downloaded</div>'
+        +'<p style="font-size:.85rem;color:var(--ink-muted);line-height:1.7;margin-bottom:1.5rem;">Open the file in your browser and press <strong>Ctrl+P &rarr; Save as PDF</strong> to save a permanent copy.</p>'
+        +'<button onclick="closeDownload()" style="background:var(--gold);color:#fff;border:none;padding:.875rem 2.5rem;font-size:.85rem;font-weight:700;cursor:pointer;font-family:inherit;letter-spacing:.04em;">Done &#x2713;</button>'
+        +'</div>';
+}
+
+/* ── Generate downloadable report ── */
+function generatePDF(){
+    var d=window._dlData||{};
+    var adv=d.advice||{};
+    var steps=adv.steps||[];
+    var bd=(d.breakdown||[]).slice(0,4);
+    var today=new Date().toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric'});
+    var time=new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'});
+    var cols=Math.max(1,Math.min(bd.length,4));
+    var bdHTML='';
+    bd.forEach(function(x){
+        bdHTML+='<div style="background:#faf8f4;border:1px solid #ece7dc;padding:14px 10px;text-align:center;">'
+            +'<div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#a0926a;margin-bottom:6px;">'+x.label+'</div>'
+            +'<div style="font-family:Georgia,serif;font-size:18px;font-weight:600;color:#0c0c0c;">'+x.value+'</div></div>';
+    });
+    var stHTML='';
+    steps.forEach(function(s,i){
+        stHTML+='<div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;'+(i<steps.length-1?'border-bottom:1px solid rgba(184,146,42,.12)':'')+'">'
+            +'<div style="min-width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,#b8922a,#d4a84b);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;flex-shrink:0;">'+(i+1)+'</div>'
+            +'<div style="font-size:13px;color:rgba(255,255,255,.75);line-height:1.75;padding-top:2px;">'+s+'</div></div>';
+    });
+    var insightHTML=adv.insight
+        ?'<div style="margin:0 2.25rem;padding:1rem 1.25rem;background:#fffbf2;border-left:2px solid #b8922a;font-size:13px;color:#5a4a2a;line-height:1.75;">'+adv.insight+'</div>'
+        :'';
+    var bdSection=bd.length
+        ?'<div style="padding:1.75rem 2.25rem;"><div style="font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#b8922a;margin-bottom:14px;">Breakdown</div>'
+         +'<div style="display:grid;grid-template-columns:repeat('+cols+',1fr);gap:10px;">'+bdHTML+'</div></div>'
+        :'';
+    var css='*{margin:0;padding:0;box-sizing:border-box}'
+        +'body{font-family:"DM Sans",sans-serif;background:#f0ede8;min-height:100vh;display:flex;align-items:flex-start;justify-content:center;padding:2.5rem 1rem}'
+        +'.w{background:#fff;width:100%;max-width:580px;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.14)}'
+        +'.h{background:#0c0c0c;padding:2rem 2.25rem 0}'
+        +'.ht{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.75rem}'
+        +'.lg{font-family:"Cormorant Garamond",Georgia,serif;font-size:26px;font-weight:600;color:#fff}'
+        +'.lg span{color:#b8922a}'
+        +'.ls{font-size:9px;color:rgba(255,255,255,.35);letter-spacing:.16em;text-transform:uppercase;margin-top:4px}'
+        +'.bg{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border:1px solid rgba(184,146,42,.35);color:#d4a84b;background:rgba(184,146,42,.08)}'
+        +'.cl{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:6px}'
+        +'.ct{font-family:"Cormorant Garamond",Georgia,serif;font-size:22px;font-weight:600;color:#fff;margin-bottom:1.75rem;line-height:1.2}'
+        +'.gl{height:2px;background:linear-gradient(90deg,transparent,#b8922a,#d4a84b,#b8922a,transparent);margin:0 -2.25rem}'
+        +'.r{padding:2.25rem;text-align:center;background:linear-gradient(160deg,#fffdf9,#fdf8ef);border-bottom:1px solid #ede8de}'
+        +'.re{font-size:2.5rem;margin-bottom:12px}'
+        +'.rl{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#b8922a;margin-bottom:8px}'
+        +'.rv{font-family:"Cormorant Garamond",Georgia,serif;font-size:48px;font-weight:600;color:#0c0c0c;letter-spacing:-.03em;line-height:1}'
+        +'.rs{font-size:12px;color:#999;margin-top:10px}'
+        +'.a{background:#0c0c0c;padding:1.75rem 2.25rem}'
+        +'.al{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#b8922a;margin-bottom:16px}'
+        +'.ft{padding:1.5rem 2.25rem;background:#faf8f4;border-top:1px solid #ece7dc;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}'
+        +'.fi{font-size:12px;color:#666;line-height:1.85}'
+        +'.fi strong{color:#0c0c0c;font-weight:600}'
+        +'.fb2{display:flex;gap:5px;flex-wrap:wrap}'
+        +'.fb{font-size:8px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border:1px solid #ddd;color:#999}'
+        +'.fm{width:100%;font-size:10px;color:#bbb;padding-top:12px;border-top:1px solid #ece7dc;text-align:center}'
+        +'@media print{body{background:#fff;padding:0}.w{box-shadow:none;max-width:100%}.h,.r,.a{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}';
+    var html='<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">'
+        +'<title>Finaura - '+(d.title||'Report')+'</title>'
+        +'<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">'
+        +'<style>'+css+'</style></head><body>'
+        +'<div class="w"><div class="h"><div class="ht">'
+        +'<div><div class="lg">Finaura<span>&#x2122;</span></div><div class="ls">Investment Solution &middot; Ludhiana, Punjab</div></div>'
+        +'<div class="bg">Personal Report</div></div>'
+        +'<div class="cl">Calculator</div>'
+        +'<div class="ct">'+(d.title||'Financial Analysis')+'</div>'
+        +'<div class="gl"></div></div>'
+        +'<div class="r"><div class="re">'+(adv.emoji||'&#x2705;')+'</div>'
+        +'<div class="rl">'+(adv.title||'Your Result')+'</div>'
+        +'<div class="rv">'+(d.result||'&mdash;')+'</div>'
+        +'<div class="rs">Calculated '+today+'</div>'+(d.leadName?'<div style="font-size:11px;color:#b8922a;margin-top:6px;font-weight:600;">Prepared for '+d.leadName+(d.leadMobile?' &middot; '+d.leadMobile:'')+(d.leadEmail?' &middot; '+d.leadEmail:'')+'</div>':'')+'</div>'
+        +insightHTML+bdSection
+        +'<div class="a"><div class="al">Your 3-Step Action Plan</div>'+stHTML+'</div>'
+        +'<div class="ft"><div class="fi"><strong>Akash Sood</strong> &middot; AMFI-Registered MFD &middot; ARN-293004<br>+91 81465 09068 &nbsp;&middot;&nbsp; finauraindia@gmail.com</div>'
+        +'<div class="fb2"><div class="fb">AMFI</div><div class="fb">NSE</div><div class="fb">BSE</div><div class="fb">IRDAI</div></div>'
+        +'<div class="fm">For informational purposes only. Not financial advice. &middot; '+today+' at '+time+'</div></div>'
+        +'</div></body></html>';
+    var blob=new Blob([html],{type:'text/html;charset=utf-8'});
+    var url=URL.createObjectURL(blob);
+    var a=document.createElement('a');
+    a.href=url;
+    a.download='Finaura-'+(d.title||'Report').replace(/[^a-zA-Z0-9]/g,'-').replace(/-+/g,'-')+'-Report.html';
+    document.body.appendChild(a);a.click();document.body.removeChild(a);
+    setTimeout(function(){URL.revokeObjectURL(url);},30000);
+}
+
+/* ── Talk to Expert ── */
+function talkExpert(btn){
+    var msg='Hi Finaura! I would like to discuss my financial plan.';
+    if(btn){var card=btn.closest('.card');if(card){var t=(card.querySelector('.card-title')||{}).textContent||'';var v=(card.querySelector('.result-value')||{}).textContent||'';if(t)msg='Hi Finaura! I used the '+t+' and got '+v+'. Can we discuss this?';}}
+    window.open('https://wa.me/918146509068?text='+encodeURIComponent(msg),'_blank');
+}
+
+function filterCat(cat,btn){document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active');});btn.classList.add('active');document.querySelectorAll('.card').forEach(function(card){card.style.display=(cat==='all'||card.dataset.cat===cat)?'':'none';});}
+function toggleFaq(btn){var body=btn.nextElementSibling;var isOpen=btn.classList.contains('open');document.querySelectorAll('.faq-trigger.open').forEach(function(b){b.classList.remove('open');b.nextElementSibling.classList.remove('active');});if(!isOpen){btn.classList.add('open');body.classList.add('active');}}
+document.addEventListener('DOMContentLoaded',function(){['updateSIP','updateLS','updateSWP','updateCAGR','updateStepSIP','updateELSS','updateRetirement','updateEdu','updateInflation','updateEMI','updateTerm','updateHealthIns','updatePPF','updateIRR'].forEach(function(fn){try{if(typeof window[fn]==='function')window[fn]();}catch(e){}});document.querySelectorAll('.result-box').forEach(function(b){b.style.opacity='1';b.style.transform='none';});});
+</script>
+</body>
+</html>
